@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body { margin: 0px; height: 100%; overflow: hidden; }
+            #stats {position: absolute; left: 0; top: 0; }
+            #mount {height: 100%;}
+            #mount.waiting .pano-viewer {
+              pointer-events: none;
+            }
+            #loading { position: absolute; z-index: 10000; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(51, 58, 77);}
+            .initialize .img-info { position: absolute; top: 50%; left: 50%; width: 110px;  margin-top: -100px; margin-left:-55px; z-index: 1005; }
+            .initialize .logo { width: 110px; z-index: 1005;}
+            .initialize .loading-text {
+                position: absolute;
+                bottom: 134px;
+                left: 50%;
+                width:272px;
+                text-align: center;
+                color: #dddddd;
+                font-size: 20px;
+                font-family:PingFangSC-Medium;
+                line-height: 30px;
+                margin-left: -136px;
+                z-index: 1005;
+            }
+            .initialize .loading-text-mobile {
+                position: absolute;
+                bottom: 96px;
+                left: 50%;
+                width:272px;
+                text-align: center;
+                color: #dddddd;
+                font-size: 16px;
+                font-family:PingFangSC-Medium;
+                line-height: 30px;
+                margin-left: -136px;
+                z-index: 1005;
+            }
+            .initialize .loading-progress {height: 8px;width: 932px;position: absolute;left: 50%;bottom: 106px;margin-left: -407px;background-color: #1a202d;z-index: 1005;}
+            .initialize .loading-progress-mobile { height: 6px; width: calc(100% - 92px); position: absolute; bottom: 76px; margin: 0 46px; background-color: #000000; border-radius: 15px; z-index: 1005;}
+
+            .initialize.mobile .loading-text { color: #ffffff; font-size: 14px; }
+            .initialize.mobile { background-color: #222222; }
+        </style>
+        <title></title>
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        
+
+<script>
+    window.__g_cdnHost = 'https://qhstaticssl.kujiale.com/__p/static/-fe-pub-bu-pano-panoviewer';
+    window.__g_cdnHostL = 'https://qhstaticssl.kujiale.com';
+</script>
+
+<script>
+    window.__g_prCmnCdnHost = 'https://qhstaticssl.kujiale.com/pub/cmn-tpl-d033f490187';
+</script>
+
+
+                
+<script> window.g_ktrackerOptions = window.g_ktrackerOptions || [{"name":"initException","value":true,"isBoolean":true,"desc":"是否开启错误监控"},{"name":"initPagePerformance","value":true,"isBoolean":true,"desc":"是否开启性能监控"},{"name":"initTraceCollector","value":false,"isBoolean":true,"desc":"是否开启行为监控 （注意：开启将会收集用户行为数据，会导致数据激增，请在调整前通知到 @监控助手二代）"},{"name":"getPagePerformance","value":true,"isBoolean":true,"desc":"是否获取页面性能数据"},{"name":"getResourcePerformance","value":true,"isBoolean":true,"desc":"是否获取静态资源性能数据"},{"name":"getAjaxPerformance","value":true,"isBoolean":true,"desc":"是否获取Ajax性能数据"},{"name":"getFetchPerformance","value":false,"isBoolean":true,"desc":"是否获取 Fetch 性能数据"},{"name":"getViewport","value":true,"isBoolean":true,"desc":"是否收集页面元素页面位置信息"},{"name":"autoInit","value":true,"isBoolean":true,"desc":"是否自动开启"},{"name":"getUnhandledrejection","value":true,"isBoolean":true,"desc":"是否收集页面 unhandledrejection 异常"},{"name":"maxStackDepth","value":10,"isBoolean":false,"desc":"高级配置，错误栈格式化解析最大解析深度"},{"name":"maxLogCount","value":200,"isBoolean":false,"desc":"高级配置，最大暂存错误日志条数"},{"name":"debounceThreshold","value":5000,"isBoolean":false,"desc":"高级配置，发送静态资源性能数据间隔"},{"name":"performanceDelay","value":0,"isBoolean":false,"desc":"高级配置，初始化收集页面性能监控数据重试时间间隔"},{"name":"throttleThreshold","value":500,"isBoolean":false,"desc":"高级配置，收集行为数据间隔"},{"name":"webglStat","value":false,"isBoolean":true,"desc":"高级配置，是否收集 webgl stat 信息"},{"name":"slowThreshold","value":16000,"isBoolean":false,"desc":"高级配置，慢会话耗时定义 (ms)"},{"name":"browserSampleThreshold","value":300000,"isBoolean":false,"desc":"高级配置，同一设备采样会话间隔 (ms)"},{"name":"enableBrowserSample","value":true,"isBoolean":true,"desc":"高级配置，是否开启同一设备会话间隔采样（注意：关闭将会收集所有慢会话的静态资源数据，可能会导致数据激增，请在调整前通知到 @监控助手二代 ）"}] </script>
+<script src="/js/kejiale.ktracker.min.js"></script>
+<meta name="feBu" content="kujiale-render-pano-design-airoaming">
+<meta name="feVersion" content="1659004003085">
+<meta name="serviceWithStage" content="prod">
+
+<script>
+    window.g_kio = {
+    'pageName': 'kujiale-render-pano-design-airoaming',
+    'pageDescription': 'kujiale-render-pano-design-airoaming',
+    'namespaceId': 'qkWL',
+    'userId': ''
+};
+    window.__g_cdnHost_8f8b06b74999d16a69b36c8ec11b9ec0 = "//qhstaticssl.kujiale.com/__p/static/-fe-pub-bu-pano-panoviewer";
+</script>
+ <link rel="stylesheet" type="text/css" href="/css/kujiale.entry.css">
+<script src="https://qhstaticssl.kujiale.com/__p/static/-fe-pub-bu-pano-panoviewer/vendor_stable.86d670b3a8f488ff5d47.js?pn=kujiale-render-pano-design-airoaming&ps=724279" crossorigin="anonymous"></script>
+<script type="pub-meta" pn="kujiale-render-pano-design-airoaming" pv="defualttag" ps="724279"></script>
+
+<meta charset="utf-8" />
+<meta property="qc:admins" content="2031037737665630511236375" />
+<meta property="wb:webmaster" content="a9f04016e01c7a96" />
+<meta name="baidu-site-verification" content="OrRQylgvFq" />
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="cluster" content="_">
+
+
+<link rel="canonical" href="https://yun.kujiale.com/design/3FO44YRUBHVW/airoaming">
+
+
+<meta kjl-global="userid" content="null" />
+
+<script>
+
+window.ensw=window.ensw===undefined?(location.hostname === 'www.kujiale.com'||location.hostname === 'yun.kujiale.com'||location.hostname === 'kujiale.meijian.com'||location.hostname === 'www.kujiale.cn'):window.ensw;
+
+if ('serviceWorker' in navigator && window.ensw) {
+    navigator.serviceWorker.register('/__sw.js', { scope: '/' }).catch(function(error) {
+        console.log('failed with ' + error);
+    });
+}
+</script>
+<script>
+(function(){
+    var isIfr = false;
+    try {
+        isIfr = window.parent !== window;
+    } catch (e) {
+        isIfr = true;
+    }
+    var logout = !isIfr && false;
+    if (logout) {
+        var xhr = new XMLHttpRequest();xhr.open('post', '/api/logout');
+		xhr.timeout=3000;
+		xhr.onload=xhr.onerror=xhr.ontimeout=function(e){console.log(e);location.reload()};
+		xhr.send();
+    }
+})();
+</script>
+
+
+
+
+<link rel="shortcut icon" href="https://qhstaticssl.kujiale.com/static/images/favicon.ico" type="image/x-icon">
+
+
+
+        
+<script src="https://at.alicdn.com/t/font_1030367_kw1trdre7sf.js" defer></script>
+        
+<script>
+  window.share_link = {"mobile_link":"https://m.kujiale.com","pc_link":"https://www.kujiale.com"}
+  window.airoaming_resolution = "50"
+  window.jinmao_plan_list = ["3FO4A2I61P99","3FO4A2JS3GDF","3FO49UNERH2G","3FO49UQI3J29","3FO49UOA0YY1","3FO49UNFTCPH","3FO49V0KWD23","3FO49UN9OL59","3FO49UNGAYIG","3FO49UN7PBYJ","3FO49UN9R9R2","3FO49UQ6IXL9","3FO4CQ9ECA8V","3FO4CQD7N59B"]
+  window.hesheng_huxing_info = {"3FO4D9REUGCV":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602815390556/A1-139-min.jpg","3FO4COHMO80N":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602815390556/A1-139-min.jpg","3FO4D2M4UVCG":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602815390574/A2-139-min.jpg","3FO4COMNDP9S":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602815390574/A2-139-min.jpg","3FO4D5FE7W3V":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602813588987/118.jpg","3FO4COHGLXD6":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602813588987/118.jpg","3FO4D62GYHTR":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602813588215/122.27.jpg","3FO4COHYWL1R":"//qhstaticssl.kujiale.com/newt/29/image/jpeg/1602813588215/122.27.jpg","3FO4A2I61P99":"//qhstaticssl.kujiale.com/newt/18/image/png/1591843212595/C2E3F1EBA1B2E757FA2FA2E065EED5F2.png","3FO4A2JS3GDF":"//qhstaticssl.kujiale.com/newt/18/image/png/1591843273936/5F93C2D6448559BB6D78EC2E14AE23BB.png","3FO4CQ9ECA8V":"//qhstaticssl.kujiale.com/newt/29/image/png/1604902743421/AFB95E58C8B50996F267D8AA8EBB6FD2.png","3FO4CQD7N59B":"//qhstaticssl.kujiale.com/newt/29/image/png/1604902743435/C38DB10FAC0D70173DC59070D3A60EEE.png"}
+</script>
+        
+    </head>
+    <body>
+       
+        <div id="loading" >
+            <div class="loading-mask"></div>
+        </div>
+        <div id="mount"></div>
+        <script>
+            window.g_stage = 'prod';
+            window.g_yunHost = 'https://yun.kujiale.com';
+            window.g_bucket = {"product_replace":{"id":562,"experimentKey":"product_replace","version":"ORIGINAL","name":"商品替换"},"restrict_before_login":{"id":972,"experimentKey":"restrict_before_login","version":"check_login","name":"登录限制"}};
+            window.g_publocale = 'zh_CN';
+            window.g_mHost = 'https://m.kujiale.com';
+            window.g_siteHost = 'https://www.kujiale.com';
+            
+                window.g_userVersion = 1;
+                window.g_userName = "";
+                window.g_userType = "";
+                window.g_userId = ""
+            
+            window.wx_appId = {"appId":"wx8e329d1069f3515a"};
+            window.restrict_login_owners = []
+            window.is_kjl = true;
+        </script>
+        <script type="text/javascript" src="/js/kejiale.kio.2.4.3.prod.js" ></script>
+        <script type="text/javascript" src="/js/jweixin-1.6.0.js"></script>
+        <script>window.$kio || (window.$kio = kio(window.g_kio));</script>
+    <script src="/js/kujiale.entry.js" ></script>
+
+    </body>
+</html>
