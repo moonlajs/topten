@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS 3D transforms - a very short introduction - by Bartek Szopka</title>
+   
+    <script>
+        (function(d,ua){
+            if ((ua.indexOf('chrome') > -1) || (ua.indexOf('safari') > -1 && ua.indexOf("mobile") === -1)) {
+                d.className += " supported ";
+            }
+        })(document.documentElement, navigator.userAgent.toLowerCase());
+    </script>
+
+    <meta name="description" content="Interactive presentation introducing CSS 3D transforms.">
+    <meta name="author" content="Bartek Szopka" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu+Mono|Crimson+Text:400,700,400italic" rel="stylesheet" />
+    <link href="impress_js_ppt.css" rel="stylesheet" />
+	<!-- prefixfree.js 是 自动加前缀的,在link中，或是style中，或是dom元素的style中书写CSS3 code，或是jQuery .css()方法此脚本会自动补上需要的前缀，让响应的浏览器支持该CSS3属性 -->
+<!-- 避免了一些老长的浏览器前缀兼容性,比如: -ms-, -o-, -moz-, -webkit-  -->
+    <!-- <script src="prefixfree.js"></script> -->
+</head>
+<body>
+
+<div class="fallback-message">
+    <p>This presentation was build for latest <b>Chrome</b> or <b>Safari</b> browser.</p>
+    <p>You are viewing simplified view, but most of the CSS 3D will not work for you, sorry.</p>
+</div>
+
+<div id="impress">
+
+<div id="title" class="step">
+    <h1>
+        <span class="design">设计一个</span>
+        <div class="good">精彩<span class="PPT">PPT</span></div>
+        <span class="points">有哪些要点?</span>
+    </h1>
+
+</div>
+
+<div id="first" class="step" data-x="0" data-y="90" data-z="-2000" data-rotate="180" data-rotate-x="0" data-rotate-y="0" data-scale="0.01">
+  看看了看看
+</div>
+
+<div id="second" class="step" data-x="839" data-y="545" data-rotate="33" data-scale="0.5">
+哦i健身房 F
+</div>
+
+<div id="third" class="step" data-x="423" data-y="906" data-rotate="65" data-scale="0.4">
+帕克没见你的父母
+</div>
+
+<div id="fourth" class="step" data-x="-139" data-y="990" data-rotate="98" data-scale="0.3">
+    DFGHDRFAFS
+</div>
+
+<div id="fifth" class="step" data-x="-656" data-y="755" data-rotate="131" data-scale="0.2">
+    的规划了开幕式让大家
+</div>
+
+<div id="sixth" class="step" data-x="-956" data-y="292" data-rotate="163" data-scale="0.1">
+    回家没复活家没人
+</div>
+
+<div id="seventh" class="step" data-x="-839" data-y="-545" data-rotate="-33" data-scale="0.2">
+    骗技能卡文件
+</div>
+
+<div id="eighth" class="step" data-x="-423" data-y="-906" data-rotate="-65" data-scale="0.3">
+    看看
+</div>
+
+<div id="ninth" class="step" data-x="139" data-y="-990" data-rotate="-98" data-scale="0.4">
+    说
+</div>
+
+<div id="tenth" class="step" data-x="656" data-y="-755" data-rotate="-131" data-scale="0.5">
+    挺
+</div>
+
+<div id="eleventh" class="step" data-x="956" data-y="-292" data-rotate="-163" data-scale="0.6">
+    从海南过来
+</div>
+
+<div id="end" class="step" data-x="0" data-y="500" data-rotate="0" data-scale="2">
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9117370-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
