@@ -1,0 +1,284 @@
+
+
+
+
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <title>font-size</title>
+  <link rel="shortcut icon" type="image/ico" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--移动端视图-->
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="ajanuw" />
+  <!--关键词-->
+  <meta name="description" content="ajanuw, b,c" />
+  <!--网站内容描述-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  
+  <style>
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+        font-size: calc(100% + 2 * (100vw - 375px) / 39);
+        font-size: calc(16px + 2 * (100vw - 375px) / 39);
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        /* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+        font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+        font-size: calc(18px + 4 * (100vw - 414px) / 586);
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        /* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+        font-size: calc(125% + 4 * (100vw - 600px) / 400);
+        font-size: calc(20px + 4 * (100vw - 600px) / 400);
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        /* 1000px往后是每100像素0.5px增加 */
+        font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+        font-size: calc(22px + 6 * (100vw - 1000px) / 1000);
+    }
+}
+.title {
+    text-align: center;
+    font-size: 1.2em;
+}
+.poem {
+   
+    text-align: center;
+    font-size: 0.8em;
+}
+</style>
+</head>
+
+<body>
+
+<p >无题</p>
+<p class="title">标题</p>
+<span class="poem">谁家新燕啄春泥，</span>
+<span class="poem">春江水暖鸭先知，</span>
+<span class="poem">风雨送春归,飞雪迎春到</span>
+
+  <script>
+   </script>
+   
+   <style>
+    .all{width: 500px;height: 500px;background: #0f0;line-height: 400px;}   
+    .all img{vertical-align:bottom;width: 100px;height:100px}
+</style>
+
+    <div class="all">
+        <img src="Starry.jpg" alt="">text-bottom 对齐的图像fg777hsqlf2jy。。
+    </div>
+	<p>一个<img class="bottom" src="Starry.jpg" 
+	style="vertical-align: baseline;" width="100" height="100" />fjyl  text-bottom 对齐的图像。</p>
+
+	
+	<style>
+	.hr-wavy {
+    border: 0;
+    color: #d0d0d5;
+    height: .5em;
+    white-space: nowrap;
+    letter-spacing: 100vw;
+    padding-top: .5em;
+}
+.hr-wavy::before {
+    content: "\2000\2000";
+    /* IE浏览器实线代替 */
+    text-decoration: overline;
+    /* 现代浏览器 */
+    text-decoration: overline wavy;
+}
+</style>
+<hr class="hr-wavy">
+   <style>
+   .hr-shadow {
+    border: 0;
+    padding-top: 10px;
+    color: #d0d0d5;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-shadow: inset 0 10px 10px -10px;
+}
+   </style>
+   
+   
+   <hr class="hr-shadow">
+   
+      <style>
+  /* 现代浏览器only */
+.hr-twill-colorful {
+    border: 0;
+    padding: 3px;
+    background: linear-gradient(135deg, red, orange,green, blue, purple);
+    --mask-image: repeating-linear-gradient(135deg, #000 0px, #000 1px, transparent 1px, transparent 6px);
+    -webkit-mask-image: var(--mask-image);
+    mask-image: var(--mask-image);
+}
+   </style>
+   
+   
+   <hr class="hr-twill-colorful">
+   
+    <style>
+   .hr-mid-circle,
+.hr-mid-square {
+    border: 0;
+    color: #d0d0d5;
+    background: linear-gradient(currentColor, currentColor) no-repeat center;
+    background-size: 100% 1px;
+}
+.hr-mid-circle::before {
+    content: '';
+    display: block;
+    width: .75em; height: .75em;
+    border-radius: 50%;
+    background-color: currentColor;
+    margin: auto;
+}
+.hr-mid-square::before {
+    content: '';
+    display: block;
+    width: .75em; height: .75em;
+    transform: rotate(45deg);
+    background-color: currentColor;
+    margin: 3px auto;
+}
+   </style>
+   <hr class="hr-mid-circle">
+<hr class="hr-mid-square">
+
+
+ <style> 
+ .hr-space-square {
+    border: 0;
+    color: #d0d0d5;
+    background: linear-gradient(currentColor, currentColor) no-repeat center;
+    background-size: calc(100% - 1.5em - 6px) 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.hr-space-square::before,
+.hr-space-square::after {
+    content: '';
+    display: block;
+    width: .75em; height: .75em;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 3px;
+}
+ 
+ </style>
+<hr class="hr-space-square">
+<style>
+
+.hr-double-arrow {
+    color: #d0d0d5;
+    border: double;
+    border-width: 3px 5px;
+    border-color: #d0d0d5 transparent;
+    height: 1px;
+    overflow: visible;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.hr-double-arrow:before, 
+.hr-double-arrow:after {
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    border-width: 0 3px 3px 0;
+    border-style: double;
+    top: -3px;
+    background: radial-gradient(2px at 1px 1px, currentColor 2px, transparent 0) no-repeat;
+}
+.hr-double-arrow:before {
+    transform: rotate(-45deg);
+    left: -20px;
+}
+.hr-double-arrow:after {
+    transform: rotate(135deg);
+    right: -20px;
+}
+
+</style>
+
+
+<hr class="hr-double-arrow">
+<style>
+.hr-solid-content {
+    color: #a2a9b6;
+    border: 0;
+    font-size: 12px;
+    padding: 1em 0;
+    position: relative;
+}
+.hr-solid-content::before {
+    content: attr(data-content);
+    position: absolute;
+    padding: 0 1ch;
+    line-height: 1px;
+    border: solid #d0d0d5;
+    border-width: 0 99vw;
+    width: fit-content;
+    /* for 不支持fit-content浏览器 */
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+}</style>
+<hr class="hr-solid-content" data-content="分隔线">
+<hr class="hr-solid-content" data-content="文字自适应，背景透明">
+<style>
+
+.hr-solid-content,
+.hr-dashed-content,
+.hr-fade-content,
+.hr-mid-border-content {
+    color: #a2a9b6;
+    border: 0;
+    font-size: 12px;
+    padding: 1em 0;
+    position: relative;
+    overflow: hidden;
+}
+.hr-dashed-content::before {
+    border-image: repeating-linear-gradient(90deg, #d0d0d5, #d0d0d5 1px, transparent 1px, transparent 2px) 0 85% / / 0 repeat;
+}
+
+.hr-solid-content::before,
+.hr-dashed-content::before,
+.hr-fade-content::before,
+.hr-mid-border-content::before {
+    content: attr(data-content);
+    position: absolute;
+    padding: 0 1ch;
+    line-height: 1px;
+    border: solid #d0d0d5;
+    border-width: 0 99vw;
+    width: fit-content;
+ 
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+}
+</style>
+<hr class="hr-dashed-content" data-content="分隔线">
+</body>
+
+</html>
+
+
