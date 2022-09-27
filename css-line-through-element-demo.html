@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="description" content="CSS一箭穿心和直线交叉穿越文字效果 » 张鑫旭-鑫空间-鑫生活" />
+<meta name="description" content="web前端学习demo实例页面之CSS一箭穿心和直线交叉穿越文字效果" />
+<meta name="keywords" content="css, demo, transform, 3d, rotateY, line-through" />
+<meta name="author" content="张鑫旭, zhangxinxu" />
+<title>CSS一箭穿心和直线交叉穿越文字效果 </title>
+
+<style>
+    .demo { max-width: 414px; } 
+.heart-through {
+    font-size: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+.arrow {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    height: 20px;
+    margin: auto;
+    background-color: currentColor;
+    -webkit-clip-path: polygon(0 40%, calc(100% - 12px) 40%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, calc(100% - 12px) 60%, 0 60%);
+    clip-path: polygon(0 40%, calc(100% - 19px) 40%, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, calc(100% - 12px) 60%, 0 60%);
+}
+.heart {
+    display: inline-block;
+    transform: rotateY(-1deg);
+    color:red;
+}
+
+.text-through {
+    display: flex;
+    position: relative;
+    transform-style: preserve-3d;
+    justify-content: center;
+    color:red;
+    padding-bottom: 6px;
+}
+.text-through span {
+    color: initial;
+    font-size: 50px;
+    transform: rotateY(1deg);
+}
+.text-through :nth-of-type(2n) {
+    transform: rotateY(-1deg);
+}
+.text-through .below {
+    transform: translateZ(1px);
+}
+.text-through .over {
+    transform: translateZ(-1px);
+}  
+</style>
+</head>
+
+<body class="M">
+<div id="main">
+	<h1>CSS一箭穿心和直线交叉穿越文字效果实例页面</h1>
+   
+    <div id="body">
+    	<div id="effect" class="part">
+        	<h3>效果：</h3>
+            <div class="show">
+            	<div class="demo">
+<div class="heart-through">
+    <i class="arrow"></i>
+    <span class="heart">♥</span>
+</div>
+
+<p class="text-through">
+    <i class="arrow"></i>
+    <span class="below">g</span><span>d</span><span>g</span><span>h</span><span>w</span><span class="below">h</span><span class="over">i</span><span>q</span><span class="below">v</span><span>o</span>
+</p>
+
+
+                </div>
+            </div>
+        </div>  
+    	     
+    </div>
+</div>
+
+</body>
+</html>
