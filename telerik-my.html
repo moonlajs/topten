@@ -1,0 +1,2004 @@
+<!doctype html>
+<html id="html" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        
+       
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="shortcut icon" href="/favicon.ico?v=rebv1"/>
+    
+        <title>Telerik &amp;Kendo UI - .NET Components Suites &amp;JavaScript UI Libraries
+</title>
+        <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/Telerik"/>
+        <meta property="og:title" content="Telerik &amp; Kendo UI - .NET Components Suites &amp; JavaScript UI Libraries"/>
+        <meta property="og:description" content="Save time building sleek web, mobile and desktop apps with professional .NET UI Components, JavaScript UI Libraries, Reporting and Automated Testing solutions."/>
+        <meta property="og:url" content="https://www.telerik.com/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Telerik.com"/>
+        <style type="text/css" media="all">
+            
+        </style>
+        <style type="text/css" media="all">
+            
+        </style>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+        
+        <meta name="twitter:title" content="Telerik &amp; Kendo UI - .NET Components Suites &amp; JavaScript UI Libraries"/>
+        <meta name="twitter:description" content="Save time building sleek web, mobile and desktop apps with professional .NET UI Components, JavaScript UI Libraries, Reporting and Automated Testing solutions."/>
+        <meta name="twitter:url" content="https://www.telerik.com/"/>
+        <meta property="og:image" content="https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"/>
+        <meta name="twitter:image" content="https://www.telerik.com/sfimages/default-source/logos/telerik1200x630.png"/>
+        <meta property="fb:app_id" content="472070859628573"/>
+        <meta name="twitter:site" content="@Telerik"/>
+        <meta name="twitter:creator" content="@Telerik"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+       <style type="text/css" media="all">
+	   
+	   .tlrk * {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box
+		}
+           .tk-nav{
+			backface-visibility:hidden;
+			position:relative;
+			z-index:42000;
+			box-shadow:0 0 1px rgb(0 0 0 / 15%);
+		   }
+		   
+		  #html * {
+				font-family: -apple-system,BlinkMacSystemFont,sans-serif!important
+			}
+		html {
+			font-size: 100%;
+			height: 100%;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%
+		}
+		
+
+		body {
+			background: #fff;
+			color: #383f55;
+			font: 400 16px/1.25 Arial,Helvetica,sans-serif;
+			margin: 0;
+			min-height: 100%;
+			/* 抗锯齿*/
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+		}
+			
+			
+			
+			#telerik{
+			position: relative;
+			}
+			
+		  
+		   .tk-container:after{
+			content:'';
+			clear:both;
+			display:table;
+		   }
+		   
+		   .tk-over-lay{
+		   
+				display:block;
+				outline:none!important;
+				transition:color 0.1s linear,background 0.1s linear,opacity 0.1s linear,visibility 0.12s linear;
+				width:100%;
+				z-index:0;
+				left:0;
+				right:0;
+				visibility:hidden;
+				opacity:0;
+				border:0;
+				bottom:-100px;
+				top:-100px;
+				position:fixed;
+				background: rgba(0,0,0,.5);
+		   }
+		   button, input[type=button], input[type=reset], input[type=submit]{
+			   -webkit-appearance: button;
+				border: none;
+				cursor: pointer;
+		   }
+		   
+		   .tk-bar{
+		   
+				background: #fff;
+				-webkit-box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+				box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+				color: #000;
+				position: relative;
+				z-index: 42000;
+		   }
+		   .tk-bar button{
+				cursor:default!important;
+				
+				display: block;
+				outline: none!important;
+				text-decoration: none!important;
+				-webkit-transition: color .1s linear,background .1s linear,opacity .1s linear;
+				transition: color .1s linear,background .1s linear,opacity .1s linear
+			
+		   }
+		   .tk-product-menu-item-button{
+		       -webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				background: none;
+				border: none;
+				text-align: left;
+				width: 100%;
+				position: relative;
+		   }
+		   
+		   .tk-product-menu-item-button:before{
+				left:10px;
+				right:10px;
+				border-bottom:3px solid #3f51b5;
+				content:'';
+				position:absolute;
+				bottom:0;
+				z-index:1;
+		   }
+		   .tk-brand  {
+				float:left;
+		   }
+		   .tk-product-menu{
+			   list-style:none;
+			   margin:0;
+			   padding:0;
+			   float:left;
+		   }
+		   .tk-drawer{
+		    float:right;
+		   }
+		   .tk-aside{
+		   float:right;
+		   }
+		   .tk--mobile{
+			display:none;
+		   }
+		   
+		   
+		   
+		   
+		   
+		   
+.TK-Aside-Menu-Button, .TK-Aside-Menu-Link, .TK-Menu-Item-Button, .TK-Menu-Item-Link, .TK-Products-Menu-Item-Button, .TK-Products-Menu-Item-Link{
+
+	-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background: none;
+		border: none;
+		text-align: left;
+		width: 100%;
+ color: #000;
+    display: block;
+    font: 300 20px/60px Metric,Segoe UI,Ubuntu Mono,sans-serif;
+    padding: 0 10px;
+    position: relative;
+}
+
+.TK-Aside-Menu-Button, .TK-Aside-Menu-Link {
+      color: #000;
+    display: block;
+    font: 600 14px/60px Metric,Segoe UI,Ubuntu Mono,sans-serif;
+    line-height:60px;
+    margin: 0;
+    padding: 0 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    color: #000;
+    word-wrap: break-word;
+    word-break: break-word
+}
+		   .h1,h1 {
+			font-family: Metric,Arial,sans-serif;
+			font-size: 75px;
+			font-weight: 500;
+			letter-spacing: -.015em;
+			line-height: 1;
+			  margin: 0 0 30px;
+		}
+		
+		
+		
+		
+		
+		
+		 
+		   .section-bg{
+				z-index:-2;
+				top:0;
+				right:0;
+				left:0;
+				bottom:0;
+				position:absolute;
+				width:100%;
+		   }
+		    .section-bg img{
+				 object-fit:cover;
+				 width:100%;
+				 height:100%;
+				 pointer-events:none;
+			 }
+			 img{
+				 vertical-align:middle;
+				 max-width:100%;
+				 border:0;
+			 }
+		  
+		   .tk-nav *{
+			box-sizing:border-box;
+		   }
+		   
+		   figure{
+			margin:0;
+			padding:0;
+		   }
+		   
+		   .TK-Aside-Menu-Item, .TK-Avatar, .TK-Footer-List-Horizontal-Item, 
+		   .TK-Hat-Menu-Item, .TK-Menu-Item, .TK-Nav svg, .TK-Products-Menu-Item{
+				   display: inline-block;
+					position: relative;
+					vertical-align: middle;
+		   }
+		   ul{
+		   
+		   list-style: none;
+			margin: 0;
+			padding: 0;
+		   }
+		
+.TK-Aside-Menu-Button.TK-Aside-Menu-Button--Toggle-Drawer svg line{
+    stroke: #000;
+    stroke-width: 10;
+    stroke-linecap: round;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+		
+		   
+.TK-Aside-Menu-Button.TK-Aside-Menu-Button--Toggle-Drawer svg line:first-child {
+    -webkit-transform: translateY(-20px) rotate(0deg);
+    transform: translateY(-20px) rotate(0deg);
+}
+
+.TK-Aside-Menu-Button.TK-Aside-Menu-Button--Toggle-Drawer svg line:nth-child(2) {
+    opacity: 1
+}
+
+.TK-Aside-Menu-Button.TK-Aside-Menu-Button--Toggle-Drawer svg line:nth-child(3) {
+    -webkit-transform: translateY(20px) rotate(0deg);
+    transform: translateY(20px) rotate(0deg)
+}
+
+.TK-Nav a,.TK-Nav button {
+    display: block;
+    outline: none!important;
+    text-decoration: none!important;
+    -webkit-transition: color .1s linear,background .1s linear,opacity .1s linear;
+    transition: color .1s linear,background .1s linear,opacity .1s linear
+}
+
+
+
+		.tk-nav svg {
+				vertical-align: middle;
+		}
+		
+		.TK-Aside-Menu-Button:after, .TK-Aside-Menu-Link:after, .TK-Products-Menu-Item-Button:after, .TK-Products-Menu-Item-Link:after{
+			background:#e5e6e6;
+			top:20px;
+			width:1px;
+			height;20px;
+			content:'';
+			position:absolute;
+			z-index:0;
+		}
+		
+		.TK-Arrow{
+		width:0;
+		height:0;
+		border-width:4px 3px;
+		border-color:currentColor transparent transparent transparent;
+		border-style:solid;
+		display:inline-block;
+		font-size:0;
+		font-style:normal;
+		user-select:none;
+		vertical-align:middle;
+		}
+		
+		.u-zi-3{
+		    margin-left: auto;
+			margin-right: auto;
+			max-width: 1230px;
+		}
+		.sf_colsIn-3{
+				font-size: 20px;
+				width: 75%;
+				display: inline-block;
+				font-size: 16px;
+				min-height: 1px;
+				padding-left: 15px;
+				padding-right: 15px;
+				position: relative;
+				vertical-align: top;
+			}
+		
+		.u-pt15{
+				 padding-top: 150px;
+			}
+		.Text--b9 {
+			color: #fff!important;
+		}
+		a{
+		text-decoration: none;
+		}
+		.Btn {
+			-webkit-appearance: none;
+			background-color: #015991;
+			border: 2px solid #015991;
+			border-radius: 5px;
+			color: #fff;
+			display: inline-block;
+			font-family: Metric,Arial,sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 1;
+			padding: .6em 1.46em;
+			position: relative;
+			text-align: center;
+			text-transform: capitalize;
+			-webkit-transition: color .2s ease,background-color .2s ease,border-color .2s ease;
+			transition: color .2s ease,background-color .2s ease,border-color .2s ease
+			color: #fff;
+			 -webkit-box-shadow: 0 10px 10px rgba(7,12,39,.1);
+				box-shadow: 0 10px 10px rgba(7,12,39,.1)
+		}
+		
+		.BlockLinks--buttons-prim a,.Btn--prim,.TK-Tag-Input-Button,.sfforumUnsubscribeBtn {
+			background-color: #eb0249;
+			border-color: #eb0249
+		}
+		.Section-decor   {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.Section-decor .container {
+			position: relative;
+			z-index: 2;
+		}
+		.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-common,.col-five {
+			display: inline-block;
+			font-size: 16px;
+			min-height: 1px;
+			padding-left: 15px;
+			padding-right: 15px;
+			position: relative;
+			vertical-align: top
+		}
+		
+				
+		.col-1 {
+			width: 8.333333333333332%
+		}
+
+		.col-2 {
+			width: 16.666666666666664%
+		}
+
+		.col-3 {
+			width: 25%
+		}
+
+		.col-4 {
+			width: 33.33333333333333%
+		}
+
+		.col-5 {
+			width: 41.66666666666667%
+		}
+
+		.col-6 {
+			width: 50%
+		}
+
+		.col-7 {
+			width: 58.333333333333336%
+		}
+
+		.col-8 {
+			width: 66.66666666666666%
+		}
+
+		.col-9 {
+			width: 75%
+		}
+
+		.col-10 {
+			width: 83.33333333333334%
+		}
+
+		.col-11 {
+			width: 91.66666666666666%
+		}
+
+		.col-12 {
+			width: 100%
+		}
+		
+		
+		 .u-mb-1{
+		     margin-bottom: 10px!important;
+		 }
+
+		
+		button {
+			text-align: left;
+			align-items: normal;
+			
+			
+		}
+		
+		
+		
+		.container-col {
+		  
+			
+			display: inline-block;
+			font-size: 16px;
+			min-height: 1px;
+		
+			position: relative;
+			vertical-align: top;
+		}
+		
+		
+		.container-col button{
+		    width: 100%;
+			z-index: 3;
+			 overflow: hidden;
+				position: relative;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			cursor: pointer;
+			background: #3f6ce5;
+			height: 100%;
+			min-width: 270px;
+			padding: 20px 0 20px 20px;
+			
+			border-radius: 5px;
+			background: #3f6ce5;
+			-webkit-box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+			box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+			-webkit-transition: top .3s ease-in-out,width .3s ease-in-out,margin .3s ease-in-out,-webkit-transform .3s ease-in-out;
+			transition: top .3s ease-in-out,width .3s ease-in-out,margin .3s ease-in-out,-webkit-transform .3s ease-in-out;
+			transition: top .3s ease-in-out,width .3s ease-in-out,margin .3s ease-in-out,transform .3s ease-in-out;
+			transition: top .3s ease-in-out,width .3s ease-in-out,margin .3s ease-in-out,transform .3s ease-in-out,-webkit-transform .3s ease-in-out;
+		}
+		.container-col button:hover{
+			-webkit-transform: scale(1.1);
+			transform:scale(1.1);
+		}
+		
+		
+		 .u-mb3,.u-mb4,.u-mb5,.u-mb6 {
+			margin-bottom: 90px!important
+		}
+		
+		
+		
+		.Box-illustration {
+			bottom: 0;
+			opacity: 1;
+			position: absolute;
+			right: 0;
+			-webkit-transform: translateX(05%);
+			transform: translateX(05%);
+			-webkit-transition: all .1s;
+			transition: all .1s;
+			width: 100%
+		}
+		
+		.u-fr {
+			float: right!important; 
+		}
+		.u-l-db-svg svg{
+			vertical-align: middle;
+		}
+		
+		
+		.Text--b7 {
+			color: #ccc!important
+		}
+		.Text-b7-box{
+			border:1px solid rgb(133,166,255,.5);
+			border-radius:10px;
+			padding:20px;
+		}
+	
+		.Text-b7-box-h3{
+			font-size:28px;
+			color: #fff!important;
+			text-transform:uppercase;
+		}
+		.Text-b7-box-grey8{
+			color: #dedeeb!important;
+		}
+		.Text-b7-box-devcraft{
+			border: 2px solid #6aa3ff;
+			background-color: transparent;
+			
+		}
+		.Card-tint-content{
+			border:1px solid #e7edf7;
+			transition:all .3s;
+			display:flex;
+			padding:15px 20px 0;
+			align-items:flex-start;
+			background-color:#c0e6f8;
+			border-radius:25px;
+			flex-wrap:wrap;
+			flex-direction:column;
+		}
+		 .Card-content{
+			margin-bottom: 20px;
+			margin-right: 40px;
+		}
+		
+		.Card-tag{
+		
+			background: #ffffff80;
+			border-radius: 5px;
+			height: 20px;
+			line-height: 1.1;
+			padding: 2px 20px;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			color: #4d4f52;
+			font-size: 15px;
+			font-weight: 500;
+			text-transform: uppercase!important;
+			vertical-align: middle;
+		}
+		
+		
+		.is-intoview-reveal-content{
+			opacity:0;
+			transform:translateY(25px);
+			animation:revealContent .3s .1s forwards;
+		}
+				
+		@-webkit-keyframes revealContent {
+			to {
+				opacity: 1;
+				-webkit-transform: translate(0);
+				transform: translate(0)
+			}
+		}
+
+		
+		@keyframes revealContent{
+			to {
+				opacity:1;
+				-webkit-transform: translate(0);
+				transform:translate(0);
+			}
+		}
+		
+		.BulletCheck--custom{
+				 
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAXCAMAAAC27AbQAAAAPFBMVEUAAAAAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdwAtdx2AbjhAAAAE3RSTlMAJOTrLR2WeFkE9tzNtKWHaUbPNDTpOgAAAHFJREFUKM+10UsOgCAMRVGQPyKo3f9e5TMgSvJIjN5hcwZtyn5PnnxKBAk5JURhTlb1BVkg4ZXw++xBlpFYMjOy55HBhEXKJUiY0wVpQEoVRQdILhW0OUBypiJZiBhIP64Ff207Acg3Ajt8WxejoNjrLihtB/T9/p8wAAAAAElFTkSuQmCCeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMxRjRGQTdEMTI3ODExRUFCRDMxQzVFNEJDMzBCQjlBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMxRjRGQTdFMTI3ODExRUFCRDMxQzVFNEJDMzBCQjlBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzFGNEZBN0IxMjc4MTFFQUJEMzFDNUU0QkMzMEJCOUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzFGNEZBN0MxMjc4MTFFQUJEMzFDNUU0QkMzMEJCOUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5EczDUAAABO0lEQVR42mL8//8/w2ABTAyDCNDFMYzb7uoC8XkgVhlQx4AcAqT2AbEBEB+H8unvGCSHiECFQPQCujsGi0NA4C4QB9DVMXgc4vjfS/kxTn3Uzto4HPIUiC3xOYTqIQPNLdgc4kDIIRiOIZT1iHDIARwOuUNSOQM0LAZI3QbSFRQ4RJpch8AdAzQsE0gthoq1k+IgajkEOWRs0MRBDmqnp0OQHRMPxHPQ5CqAlk2hl0MwsjbU8mw0NctAjgVa8IeWDsHITUCDcoBUB5qaKCDeAHQACy0dgrPQgyZg9DSzFYgrgXg7mkPeQAu0OxSXU7hKYGgOm0ZAP8ghTkCHXKZKoYmvOoCWPYvp4RCC1QHQoiVAKgSIv9PaIURXlMAQcgMlYiDmpFZiJbuiBFq8C9oOOUetxEqXJgQlACDAAGjDqeqy5zo1AAAAAElFTkSuQmCC);
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 40px;
+		}
+		 .z-row-j-item{
+		  display: list-item;
+		  margin-left: 30px;
+		  transition: all 0.5s 4.5s;
+		 }  
+		.z-row-j-item::marker{
+			content:'😩'
+		}
+		.z-row-j-item:hover::marker{
+			content:'😁'
+		}
+		.icon-x:before {
+			content: "\e663"
+		}
+		
+		.boxes-back-overlay {
+			background: rgba(0,0,0,.5);
+			bottom: 0;
+			display:none;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 1
+		}
+		.icon:before,[class*=" icon-"]:before,[class^=icon-]:before {
+			font-family: tlrk-icon-font;
+			font-style: normal;
+			font-weight: 400;
+			vertical-align: middle;
+			speak: none;
+			text-decoration: none;
+			text-rendering: geometricPrecision;
+			text-transform: none;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		
+		
+		
+		
+		
+		.tlrk .u-dib{
+		    display: inline-block!important;
+		}
+		
+		.Logos-jos{
+		    text-align: center!important;
+			padding-top: 20px!important;
+		}
+		.Logos-jos svg{
+			margin: 20px!important;
+		    vertical-align: middle!important;
+			opacity:0;
+			-webkit-transform:translateX(25px);
+			transform:translateX(25px);
+			
+		}
+		.Logos-jos svg:nth-child(1){
+			animation:translateAnima .3s .1s forwards;
+		}
+		.Logos-jos svg:nth-child(2){
+			animation:translateAnima .3s .2s forwards;
+		}
+		.Logos-jos svg:nth-child(3){
+			animation:translateAnima .3s .3s forwards;
+		}
+		
+		@keyframes translateAnima{
+			to{
+			opacity:1;
+			-webkit-transform:translateX(0);
+			transform:translateX(0);
+			
+			}
+		}
+		
+		@media (400px <= width <= 700px) {
+		  body {
+			line-height: 1.4;
+		  }
+		}
+		.Section--story{
+			padding-top: 0!important;
+		    position: relative;
+			z-index: 1;
+			background-color: #282f89;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 30px
+		}
+		.Section--story .Section-bg {
+			-webkit-transition: top .3s;
+			transition: top .3s;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%!important;
+		}
+		 .Section--story.is-intoview .Section-bg {
+			top: -5%;
+		}
+		.Section-bg img,.Section-bg video {
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+			pointer-events: none;
+			width: 100%;
+		}
+		
+		.Section-bg+.container {
+			position: relative;
+			width: 100%!important;
+			z-index: 1;
+		}
+		.Section--story-h2{
+			margin-bottom: 50px!important;
+			padding-top: 80px!important;
+		}
+		
+		.u-tint-white-story{
+		    background-color: #fff!important;
+		}
+		.story-modest-mb3-h3{
+			color: #000;
+			font-size: 30px!important;
+			border-bottom: 2px solid #000;
+		}
+		.story-modest-mb3-h3 button{
+			font-size: 100%;
+		}
+		.Story-tabs p{
+		font-size:24px;
+		}
+		
+		.row-Story-cta{
+			padding-top:60px;
+		}
+		.row-Story-cta-div{
+		
+		}
+		    
+		
+		.row-Story-cta-a{
+			display: block!important;
+		}
+		.Btn:hover{
+		
+			color: #fff;
+			outline: none;
+			text-decoration: none;
+			backdrop-filter: blur(10px);
+			border-color: #b90139;
+		}
+		.Btn--prim-my{
+			background-color: #eb0249;
+			border-color: #eb0249;
+		}
+		.Btn--ghost-my{
+			background-color: transparent;
+			border: 2px solid #225eff;
+			color: #000;
+		
+		}
+		.Btn--ghost-my:hover{
+			background-color: transparent;
+			border: 2px solid #0037cb;
+		 	color: #000;
+		}
+		
+		.Section-decor--awards-recognition{
+			position:absolute;
+			 background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1921' height='438'%3E%3Cpath fill='%23E5F5F9' fill-rule='evenodd' d='M1921 .234V438H0L1 82 271.01 4.149A100 100 0 0 1 298.715.234h437.7L1181.264 65z'/%3E%3C/svg%3E");
+			
+			width:100%;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			background-size:cover;
+			transition:all 0.5s;
+			transform:revealFragment 0.5s 0.5s forwards;
+		}
+		
+		
+		.u-fs-t{
+			font-size:24px;
+		}
+		.u-h-w h2{
+			color: #000;
+			word-wrap: break-word;
+			word-break: break-word;
+			letter-spacing: -.03em;
+			line-height: 1;
+			font-family: Metric,Arial,sans-serif;
+			font-weight: 500;
+			font-size: 55px;
+			margin: 0 0 25px
+		}
+		
+		.u-pos-rel {
+			position: relative!important;
+			overflow: hidden;
+		}
+		
+		.Section--recognition{
+			background: #fff;
+		    padding-top: 30px;
+		}
+		section {
+			position: relative;
+			padding-left: 20px;
+			padding-right: 20px;
+		} 
+		
+		.Section--patch{
+			margin-bottom: 0!important;
+			margin-top: 0!important;
+			padding: 0!important;
+			    background-color: #ffb318!important;
+		}
+		
+		.Section--patch-n-col-left{
+			
+			 font-weight: 500;
+			 font-size: 60px;
+		}
+		.Section--patch-n-col-right{
+	 
+			font-size: 20px;
+		}
+		.Section--patch-n-u{
+			padding:0 5px;
+		}
+		.hide-prev-next .Testimonials-prev {
+			display: none
+		}
+
+		.hide-prev-next .Testimonials-next {
+			display: none
+		}
+		.Section-Testimonials{
+			background-color: #5777ea;
+			overflow: hidden;
+			color: #fff!important;
+		}
+		.Section-Testimonials h2{
+			color: #fff!important;
+		}
+		.Testimonials-blockquote-p{
+			font-size:32px;
+			margin: 0;
+			padding: 33px 22px 28px 26px;
+			text-align: left;
+			text-indent: 0;
+			font-weight: 200;
+			max-width: 820px;
+		}
+		
+		
+	
+	
+		.Testimonials-blockquote{
+			opacity: 0;
+			position: absolute;
+			visibility: hidden;
+			margin: 0;
+		}
+		.Testimonials-blockquote.is-active{
+			opacity: 1;
+			position: relative;
+			transition: visibility 0s linear 0s,opacity 1.4s,transform 1.4s,position 0s linear 0s,-webkit-transform 1.4s;
+			visibility: visible;
+		}
+		
+		.Testimonials-block{
+			overflow: hidden;
+			position: relative;
+		}
+		
+		.Testimonials-blockquote figcaption{
+			font: 400 16px/1.2 Metric,Arial,sans-serif;
+			text-transform: uppercase;
+		}
+		
+		.Testimonials-container {
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='270' height='199'%3E%3Cpath fill='%233D57D8' fill-rule='evenodd' d='M65.325.316c34.735 0 63.816 24.139 63.816 68.391 0 24.135-12.116 50.684-26.656 72.408L63.973 199H-.001l51.593-79.609c-27.469-4.826-49.275-25.744-49.275-57.93C2.317 26.062 29.78.317 65.325.317m140.859 0C240.919.316 270 24.455 270 68.707c0 24.135-12.116 50.684-26.66 72.408L204.83 199h-63.974l51.594-79.609c-27.469-4.826-49.275-25.744-49.275-57.93 0-35.4 27.464-61.145 63.008-61.145'/%3E%3C/svg%3E");
+			background-position: 58% 100%;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+		
+		.Testimonials-prev:empty {
+			position:absolute;
+			cursor: pointer;
+			top:30%;
+			left:0;
+			z-index:3;
+			opacity:0.5;
+			transition:opacity 0.3s;
+			content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 43.809 43.809'%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.9)' stroke-miterlimit='10' stroke-width='2' d='M22.628 43.084 1.415 21.905 22.628.725'/%3E%3C/svg%3E")
+		}
+		
+		.Testimonials-next:empty {
+			position:absolute;
+			cursor: pointer;
+			top:30%;
+			right:0;
+			z-index:3;
+			opacity:0.5;
+			transition:opacity 0.3s;
+			content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 43.809 43.809'%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.9)' stroke-miterlimit='10' stroke-width='2' d='m21.181 43.084 21.213-21.18L21.181.725'/%3E%3C/svg%3E")
+		}
+		.Testimonials-prev:hover,.Testimonials-next:hover{
+			opacity:1;
+		}
+		.Testimonials-tlrk-Tabs{
+			margin: 30px auto;
+			text-align: center;
+		
+		}
+		.Testimonials-tlrk-Tabs a{
+			     width: 5px;
+				display: inline-block;
+				height: 5px;
+				border: 1px solid;
+				border-radius: 50%;
+				background: none;
+				transition: background 0.5s;
+		
+		}
+		.Testimonials-tlrk-Tabs a.is-active{
+		    background: currentColor;
+		}
+		
+		
+		@media only screen and (max-width: 1750px) {}
+		
+		
+		 
+		
+		@media only screen and (max-width: 1490px) {}
+		
+		 @media only screen and (max-width: 1370px) {
+		   
+		 }
+		 @media only screen and (max-width: 1280px) {
+			   .sf_colsIn-3{
+					font-size: 19px!important;
+					
+				}
+				
+				.u-zi-3{
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+				
+				 .h1,h1 {
+					font-size: 60px!important;
+					margin: 0 0 30px;
+				}
+				
+				.u-pt15{
+					 padding-top: 110px!important;
+				}
+				
+				.Btn {
+					font-size: 22px;
+				}
+				.Section-decor{
+					padding-bottom: 110px!important;
+				}
+				.container-col {
+					 
+					font-size: 19px!important;
+				}
+				
+				.container-col button {
+					padding: 10px 0 10px 10px;
+				}
+				 .u-mb3,.u-mb4,.u-mb5,.u-mb6 {
+					margin-bottom: 40px!important
+				}
+				
+				 .h6,h6 {
+					font-size: 17px!important
+				}
+				.Text-b7-box-h3{
+					font-size:26px;
+				}
+				
+				#html .u-fs18{
+					font-size: 17px!important;
+				}
+				.Section--story-h2{
+					margin-bottom: 40px!important;
+					padding-top: 70px!important;
+					font-size: 50px!important;
+				}
+				
+				.row-Story-cta{
+					padding-top:40px;
+					font-size: 19px!important;
+				}
+				.Section-decor--awards-recognition{
+					top:-4%;
+				}
+				
+				.u-fs-t{
+					font-size:22px;
+				}
+				
+				.u-h-w h2{
+					 
+					font-size: 50px;
+				 
+				}
+				.Section--patch-n-col-left{
+				 
+					 font-size: 50px;
+				}
+				
+				.Section--patch-n-col-right{
+			 
+					font-size: 19px;
+				}
+				.Testimonials-blockquote-p{
+					font-size:24px;
+				}
+		   }
+		   
+		      
+		  @media only screen and (max-width:1239px){
+				.tk--mobile{
+				display:block!important;
+			   }
+			   
+			   .TK-Aside-Menu-Button--Search a, .TK-Aside-Menu-Button--Toggle-Drawer, .TK-Products-Menu-Item-Button{
+			    height:45px;
+				 line-height:45px;
+			   }
+			   .tk-brand  svg {
+				 height:45px;
+			   }
+			    .tk-product-menu-item-button{
+				 line-height:45px;
+				 }
+				  .tk-product-menu-item-button{
+				   font-size: 18px;
+				  }
+				 .tk-drawer {
+					-webkit-backface-visibility: hidden;
+					backface-visibility: hidden;
+					background: #fff;
+					-webkit-box-shadow: inset 0 7px 7px -7px rgba(0,0,0,.15);
+					box-shadow: inset 0 7px 7px -7px rgba(0,0,0,.15);
+					contain: layout;
+					display: block;
+					opacity: 0;
+					position: absolute;
+					right: 0;
+					top: 45px;
+					-webkit-transform: scaleX(0);
+					transform: scaleX(0);
+					-webkit-transform-origin: right top;
+					transform-origin: right top;
+					-webkit-transition: opacity .1s linear,visibility .1s linear,-webkit-transform .1s linear;
+					transition: opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-transform .1s linear;
+					visibility: hidden;
+					width: 280px;
+					will-change: opacity,visibility,transform;
+				}
+				.TK-Drawer--Active {
+					opacity: 1;
+					-webkit-transform: scaleX(1);
+					transform: scaleX(1);
+					visibility: visible;
+				}
+				
+				.TK-Aside-Menu-Button:after, .TK-Products-Menu-Item-Button:after{
+					top:12px;
+				}
+				 
+		   }
+		
+		
+		 
+		
+		 @media only screen and (max-width: 1010px) {}
+		
+		   
+		  
+			
+		
+		
+		
+		
+	
+	    @media (max-height: 800px),only screen and (max-width:960px) {}
+		@media only screen and (max-width: 960px) {
+		
+			.sf_colsIn-3{
+		 		font-size: 17px!important;
+				width: 66.666667%;
+			}
+			 .h1,h1 {
+				font-size: 58px!important;
+				margin: 0 0 30px;	
+			}
+			
+			 .u-pt15{
+					 padding-top: 100px!important
+				}
+			.Section-decor{
+				padding-bottom: 100px!important;
+			}
+			 .container-col {
+				height: 135px;
+				margin-bottom: 20px;
+				width: 100%;
+				font-size: 17px!important;
+			}
+			 .overlay-boxes .col-2 {
+				height: 135px;
+				margin-bottom: 20px
+			}
+			
+			
+			.u-fs26, .u-fs28 {
+				font-size: 20px!important;
+			}
+			
+			.u-l-dn {
+				display: none!important;
+			}
+			.tlrk .u-l-db {
+				display: block!important
+			}
+			.Text-b7-box-h3{
+				font-size:24px;
+			}
+			
+			.Card-content{
+			    margin-bottom: 20px;
+				margin-right: 40px;
+			}
+			
+			
+			.Section--story-h2{
+				margin-bottom: 30px!important;
+				padding-top: 60px!important;
+				font-size: 42px!important;
+			}
+			.row-Story-cta-div{
+				
+				font-size: 17px!important;
+			}
+			
+			.Section-decor--awards-recognition{
+				top:-8%;
+			}
+			
+			.u-fs-t{
+				font-size:20px;
+			}
+			
+			.u-h-w h2{
+					 
+				font-size: 42px;
+				margin: 0 0 15px;
+			}
+			.Section--patch-n-col-left{
+			 
+				 font-size: 44px;
+			}
+			.Section--patch-n-col-right{
+			 
+				font-size: 17px;
+			}
+			.Testimonials-blockquote figure,.Testimonials-blockquote-p{
+				padding-left: 15%;
+				padding-right: 15%;
+			 
+				text-align: left;
+			}
+		 }
+		@media only screen and (max-width: 960px) and (min-width:591px) {}
+		
+		
+		 @media screen and (max-width: 852px) {}
+		 @media only screen and (max-width:800px){
+		   
+				 .section-bg .u-m-dn{
+					display:none;
+					object-position:50% 0;
+				 }
+				 .section-bg .u-m-db{
+					display:block;
+					object-position:50% 0;
+				 }
+				 .h1,h1 {
+					font-size:44px!important
+				}
+			   .u-pt15{
+					padding-top: 90px!important
+				}
+				
+				.Btn {
+					font-size: 20px;
+				}
+				
+				.Section-decor{
+					padding-bottom: 90px!important;
+					padding-top: 20px!important;
+				}
+				.Text-b7-box-h3{
+					font-size:22px;
+				}
+				.Section--patch-n-col-left{
+				 
+					 font-size: 34px;
+				}
+		   }
+		   
+		 @media only screen and (max-width: 660px) {
+		
+		}
+		 @media only screen and (max-width: 590px) {
+		   #html * {
+				font-family: -apple-system,BlinkMacSystemFont,sans-serif!important;
+			}
+			  #html h1,#html h2,#html h3 {
+				font-weight: 400
+			}
+					
+			.sf_colsIn-3{
+				 
+				width: 100%;
+			}
+			 [class*=col-]{
+			 width: 100%;
+			 }
+			 .h1,h1 {
+				margin: 0 0 15px
+			}
+			
+			.u-pt15{
+				padding-top: 80px!important
+			}
+			
+		   .tlrk .u-s-db {
+				display: block!important
+			}
+			.Btn {
+				font-size: 20px;
+			}
+			
+			.Section-decor{
+				padding-bottom: 80px!important;
+			}
+			
+			 .u-mb3,.u-mb4,.u-mb5,.u-mb6 {
+				margin-bottom: 20px!important
+			}
+			
+			.u-fs26, .u-fs28 {
+				font-size: 20px!important;
+			}
+			
+			.row>[class*=col-] {
+				margin-bottom: 5%;
+				width: 100%
+			}
+			.Text-b7-box-h3{
+				font-size:20px;
+			}
+			
+			.Card-content{
+			    margin-bottom: 30px;
+				margin-right: 30px;
+			}
+			
+			
+			.Section--story.is-intoview .Section-bg {
+				top: -2%;
+			}
+			.Section--story-h2{
+				margin-bottom: 20px!important;
+				padding-top: 30px!important;
+				font-size: 40px!important;
+			}
+			.row-Story-cta{
+				padding-top:20px;
+			}
+			.row-Story-cta-div{
+				width:100%;
+			
+			}
+			
+			.u-h-w{
+				padding-top: 8%;
+			}
+			.u-h-w h2{
+					 
+				font-size: 40px;
+				
+			}
+			.Section--patch-n-col{
+				line-height: 1!important;
+				padding: 4%;
+				text-align: left!important;
+				border-top:1px solid rgb(99 99 99 / 20%);
+				
+			}
+			 .Testimonials-blockquote-p{
+				font-size:22px;
+			}
+		}
+		
+		
+		 @media only screen and (max-width:589px){
+			   .tk-container{
+				padding-left:15px;
+				padding-right:15px;
+			   
+			   }
+		   }
+        </style>
+       <meta name="description" content="Save time building sleek web, mobile and desktop apps with professional .NET UI Components, JavaScript UI Libraries, Reporting and Automated Testing solutions."/>
+    </head>
+    <body id="telerik" class="telerik">
+        
+		 <div class="tlrk"  >
+		<nav class="tk-nav" data-placeholder-label="column 1">
+				
+				<div class='tk-bar'>
+				
+					<div class="tk-container">
+						<figure class="tk-brand">
+						<a href="/" aria-label="go to HomePage">
+						
+							<svg xmlns="http://www.w3.org/2000/svg" width="147" height="60" viewBox="0 0 400.4 60.3">
+								<path fill="#7c878e" d="M396.7 18.4c-2 0-3.7 1.6-3.7 3.7 0 2.2 1.7 3.7 3.7 3.7s3.7-1.6 3.7-3.7c0-2.2-1.7-3.7-3.7-3.7zm0 6.8c-1.7 0-3-1.3-3-3.1s1.3-3.1 3-3.1 3 1.3 3 3.1-1.3 3.1-3 3.1z"></path>
+								<path fill="#7c878e" d="M398.5 21.5c0-.9-.6-1.4-1.4-1.4h-1.8V24h1.1v-1.2h.3l.8 1.2h1.2l-.9-1.4c.4-.1.7-.5.7-1.1zm-1.6.4h-.6V21h.6c.3 0 .5.2.5.4 0 .4-.2.5-.5.5zm-103.5-7.7h-28.5v2.6h12.7v32.4h2.9V16.8h12.9zm7.4 9.1c-6.7 0-10.9 5.6-10.9 13.4 0 7.9 4.7 12.9 11.8 12.9 3 0 5.5-.7 7.4-2.2v-2.7c-2.2 1.8-4.3 2.5-7.1 2.5-5.2 0-9.2-3.6-9.2-10.4H311v-1c-.2-7.4-3.6-12.5-10.2-12.5zm-8 11.1c.7-5.5 3.9-8.6 8-8.6 5 0 7.1 4.1 7.3 8.6h-15.3zM315 12.1h2.9v37.1H315zm18.1 11.2c-6.7 0-10.9 5.6-10.9 13.4 0 7.9 4.7 12.9 11.8 12.9 3 0 5.5-.7 7.4-2.2v-2.7c-2.2 1.8-4.3 2.5-7.1 2.5-5.2 0-9.2-3.6-9.2-10.4h18.2v-1c-.1-7.4-3.6-12.5-10.2-12.5zm-8 11.1c.7-5.5 3.9-8.6 8-8.6 5 0 7.1 4.1 7.3 8.6h-15.3zm25-6.5v-4h-2.9v25.3h2.9V31.5c1.2-3.2 3.6-5.5 6.7-5.5.9 0 1.7.2 2.3.5v-2.8c-.6-.2-1.3-.3-2.2-.3-3.1-.1-5.7 2-6.8 4.5zm12.1-4h2.8v25.3h-2.8zm1.5-9.7c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 1.9 1.9 1.9s1.9-.9 1.9-1.9-.8-1.9-1.9-1.9zm26.5 9.7h-3.7l-12.8 11V12.1h-2.9v37.1h2.9v-13l13.2 13h3.5l-13.8-13.8z"></path>
+								<path fill="#5ce500" d="M11.2 14.9L0 21.3l17.4 10.1v20.1l11.2-6.4c.5-.3.9-1 .9-1.6V24.4L13 14.9c-.5-.3-1.3-.3-1.8 0z"></path>
+								<path fill="#5ce500" d="M12.1 48.4V34.5L0 41.5zM25 .2c-.5-.3-1.3-.3-1.8 0L10.7 7.4l24.1 13.9v27.9L47.3 42c.5-.3.9-1 .9-1.6V13.6L25 .2z"></path>
+								<path fill="#4b4e52" d="M117.9 22.5c-4.3 0-7.7 1.6-9.8 4.7-2.3 3.2-2.6 7-2.6 9 0 8.3 4.9 13.6 12.5 13.6 9.2 0 12.5-7.4 12.5-13.8 0-3.7-1.1-7-3.1-9.4-2.3-2.7-5.6-4.1-9.5-4.1zm0 22.4c-4.2 0-6.9-3.4-6.9-8.8 0-5.5 2.6-8.9 6.9-8.9 4.2 0 6.9 3.4 6.9 8.8 0 5.5-2.7 8.9-6.9 8.9zM74.8 13.6H61.7v35.6h5.8v-14h7.4c8 0 12.4-3.9 12.4-11-.1-3.1-1.3-10.6-12.5-10.6zM74.1 30h-6.6V18.9h7.4c4.3 0 6.4 1.8 6.4 5.5 0 4-2.1 5.6-7.2 5.6zm26.6-7.3c-2.2.3-3.9 1.4-5.2 3.5V23h-5.1v26.1h5.4V37.9c0-5.2.4-9.6 5.9-9.6.6 0 1.1.1 1.7.3l.7.2 1-5.3-.4-.2c-1.2-.5-2.6-.7-4-.6zm145 12.1c-1.3-.5-4-1.2-6.1-1.7-1-.3-1.9-.5-2.5-.7-2-.6-3-1.4-3-2.6 0-2.5 3.5-2.8 5-2.8 1.8 0 4.8.5 5.3 3.5l.1.4h5.2v-.5c-.4-5.3-4-7.8-10.8-7.8-5.1 0-10.2 2.4-10.2 7.6 0 2.8 1.9 5.2 5.2 6.3 1.3.5 3.5 1.1 5.6 1.7 1.2.3 2.4.7 3.3.9 1.6.5 2.4 1.4 2.4 2.6 0 2.4-2.9 3.3-5.6 3.3-2.5 0-5.5-.7-6.2-3.9l-.1-.4h-5.2l.1.6c.5 5.4 4.6 8.3 11.4 8.3 7.7 0 11.2-4.2 11.2-8.4-.1-3-1.8-5.2-5.1-6.4zm-94-9.6c-1.7-1.8-4.1-2.7-7-2.7-7.9 0-11.5 7-11.5 13.5 0 6.6 3.6 13.4 11.5 13.4 2.7 0 5-1 6.7-2.7 0 1.2 0 2.3-.1 2.7-.3 4.3-2.4 6.3-6.5 6.3-2.3 0-4.9-.8-5.4-3.1l-.1-.5H134l.1.7c.6 4.6 4.6 7.5 10.6 7.5 5.2 0 8.9-2 10.8-5.7.9-1.8 1.3-4.4 1.3-7.8V23.1h-5.1v2.1zm-6.6 19.3c-1.9 0-6.3-.9-6.3-8.8 0-5.2 2.5-8.4 6.4-8.4 3.1 0 6.3 2.2 6.3 8.4.1 5.5-2.3 8.8-6.4 8.8zm75.6-9.7c-1.3-.5-4-1.2-6.1-1.7-1-.3-1.9-.5-2.5-.7-2-.6-3-1.4-3-2.6 0-2.5 3.5-2.8 5-2.8 1.8 0 4.8.5 5.3 3.5l.1.4h5.2v-.5c-.4-5.3-4-7.8-10.8-7.8-5.1 0-10.2 2.4-10.2 7.6 0 2.8 1.9 5.2 5.2 6.3 1.3.5 3.5 1.1 5.6 1.7 1.2.3 2.4.7 3.3.9 1.6.5 2.4 1.4 2.4 2.6 0 2.4-2.9 3.3-5.6 3.3-2.5 0-5.5-.7-6.2-3.9l-.1-.4h-5.2l.1.6c.5 5.4 4.6 8.3 11.4 8.3 7.7 0 11.2-4.2 11.2-8.4 0-3-1.7-5.2-5.1-6.4zm-19.9 0c-.3-7.3-5-12.2-11.9-12.2-4 0-7.3 1.6-9.5 4.5-1.8 2.4-2.8 5.7-2.8 9.1 0 8.1 5 13.5 12.5 13.5 5.8 0 9.8-2.9 11.2-8.3l.2-.6h-5.4l-.1.3c-1.1 3.2-3.8 3.9-5.9 3.9-4.1 0-6.7-2.7-7-7.1h18.5l.1-.5c.1-.6.1-1.5.1-2.1v-.5zm-18.4-1.6c.5-3.6 2.9-5.9 6.5-5.9 2.7 0 5.9 1.6 6.3 5.9h-12.8zm-10.5-10.5c-2.2.3-3.9 1.4-5.2 3.5V23h-5.1v26.1h5.4V37.9c0-5.2.4-9.6 5.9-9.6.6 0 1.1.1 1.7.3l.7.2 1-5.3-.4-.2c-1.2-.5-2.6-.7-4-.6zm84.8-1.2c0-.9-.6-1.4-1.4-1.4h-1.8V24h1.1v-1.2h.3l.8 1.2h1.2l-.9-1.4c.4-.1.7-.5.7-1.1zm-1.5.4h-.6V21h.6c.3 0 .5.2.5.4 0 .4-.2.5-.5.5z"></path>
+								<path fill="#4b4e52" d="M255 18.4c-2 0-3.7 1.6-3.7 3.7 0 2.2 1.7 3.7 3.7 3.7s3.7-1.6 3.7-3.7c0-2.2-1.7-3.7-3.7-3.7zm0 6.8c-1.7 0-3-1.3-3-3.1s1.3-3.1 3-3.1 3 1.3 3 3.1-1.4 3.1-3 3.1z"></path>
+							</svg>
+						</a>
+						</figure>
+						<ul class="tk-product-menu">
+							<li class="tk-product-menu-item">
+								<button type="button" class="tk-product-menu-item-button">  
+									ALL products
+									<i class="tk-arrow TK-Arrow"></i>
+								</button>
+								<div></div>
+							</li>
+						</ul>
+						<div class="tk-drawer" id="js-tlrk-nav-drawer">
+								<ul class="TK-Context-Menu TK-Menu">
+									<li class="TK-Menu-Item">
+										<a href="/support/demos" class="TK-Menu-Item-Link" data-match-exact-path="" data-track-instance="1">Demos</a>
+									</li>
+									<li class="TK-Menu-Item">
+										<a href="/services" class="TK-Menu-Item-Link" data-match-exact-path="" data-track-instance="1">Services</a>
+									</li>
+									<li class="TK-Menu-Item">
+										<a href="/blogs" class="TK-Menu-Item-Link" data-match-starts-with-path="" data-track-instance="1">Blogs</a>
+									</li>
+									<li class="TK-Menu-Item">
+										<a href="/support" class="TK-Menu-Item-Link" data-match-exact-path="" data-match-pattern="" data-pattern="telerik.com/support/kb/aspnet-ajax|telerik.com/support/kb/silverlight|telerik.com/support/kb/justmock">Docs &amp;Support</a>
+									</li>
+									<li class="TK-Menu-Item">
+										<a href="/purchase.aspx" class="TK-Menu-Item-Link" data-match-exact-path="" data-track-instance="1">Pricing</a>
+									</li>
+								</ul>
+								<ul class="TK-Aside-Menu TK-Aside-Menu--Max">
+									<li class="TK-Aside-Menu-Item TK-Aside-Menu-Button--Search">
+										<a href="/search" class="TK-Aside-Menu-Link js-tlrk-nav-search-link" title="Search" data-match-exact-path="" data-track-instance="1">
+											<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 512 512" xml:space="preserve">
+												<path d="M504.4,464L378.9,338.5c25.6-34.8,40.8-77.7,40.8-124.2c0-115.7-94.1-209.8-209.8-209.8C94.2,4.5,0,98.6,0,214.3 C0,330,94.2,424.1,209.9,424.1c50.5,0,96.9-17.9,133.1-47.8l124.5,124.5c5.1,5.1,11.8,7.6,18.4,7.6s13.3-2.5,18.4-7.6 C514.6,490.7,514.6,474.2,504.4,464z M52.2,214.3c0-87,70.7-157.7,157.7-157.7s157.7,70.7,157.7,157.7c0,41-15.7,78.3-41.4,106.4 c-0.3,0.3-0.7,0.6-1,0.9c-0.7,0.7-1.3,1.4-1.9,2.2c-28.7,29.7-68.9,48.2-113.4,48.2C122.9,372,52.2,301.3,52.2,214.3z"></path>
+											</svg>
+										</a>
+									</li>
+									<li class="TK-Aside-Menu-Item">
+										<a href="https://store.progress.com/shopping-cart" data-empty-url="/purchase.aspx?filter=web" class="TK-Aside-Menu-Link js-tlrk-nav-shopping-cart-counter-container" aria-label="Shopping cart" title="Shopping cart" data-match-exact-path="">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+												<path d="M11.75 14.5a1 1 0 111-1 1 1 0 01-1 1zm-8.25 0a1 1 0 111-1 1 1 0 01-1 1zm8.18-3H4.25A1.752 1.752 0 012.5 9.75v-8a.25.25 0 00-.25-.25H.75a.75.75 0 010-1.5h1.5A1.752 1.752 0 014 1.75v.75h8.78a1.75 1.75 0 011.72 2.093l-1.1 5.5a1.754 1.754 0 01-1.72 1.407zM4 4v5.75a.25.25 0 00.25.25h7.43a.251.251 0 00.245-.2l1.1-5.5a.251.251 0 00-.245-.3z" transform="translate(.75 .75)"></path>
+											</svg>
+											<span class="TK-Aside-Menu-Link-Text">Shopping cart</span>
+										</a>
+									</li>
+									<li class="TK-Aside-Menu-Item TK--Not-Auth" id="js-tlrk-nav-not-auth-container">
+										<a href="/account/" title="Your Account" class="TK-Aside-Menu-Button" data-match-exact-path="">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+												<path xmlns="http://www.w3.org/2000/svg" d="M13.75 14.5a.751.751 0 01-.75-.75v-.5a5.75 5.75 0 10-11.5 0v.5a.75.75 0 01-1.5 0v-.5a7.175 7.175 0 011.319-4.159A7.262 7.262 0 014.69 6.476 3.717 3.717 0 013.5 3.75a3.75 3.75 0 117.5 0 3.716 3.716 0 01-1.19 2.726 7.263 7.263 0 013.371 2.615A7.175 7.175 0 0114.5 13.25v.5a.751.751 0 01-.75.75zm-6.5-13A2.25 2.25 0 109.5 3.75 2.253 2.253 0 007.25 1.5z" transform="translate(.75 .75)"></path>
+											</svg>
+											<span class="TK-Aside-Menu-Button-Text">Login</span>
+										</a>
+									</li>
+									<li class="TK-Aside-Menu-Item TK-bn">
+										<a href="/contact" class="TK-Aside-Menu-Button TK-Button--CTA-Sec" title="Contact Us" data-match-starts-with-path="" data-track-instance="1">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+												<path d="M12.75 14.5h-11A1.752 1.752 0 010 12.753v-7.37a.092.092 0 01.005-.026.1.1 0 000-.023.782.782 0 01.01-.093.63.63 0 01.02-.071l.007-.021V5.14a.828.828 0 01.036-.088.673.673 0 01.045-.078.078.078 0 00.009-.02.069.069 0 01.01-.02.1.1 0 01.028-.019.1.1 0 00.019-.015.68.68 0 01.077-.076.124.124 0 00.015-.024.106.106 0 01.019-.016L6.2.354a1.736 1.736 0 012.1 0l5.9 4.431a.1.1 0 01.018.02.118.118 0 00.017.019.591.591 0 01.076.075.109.109 0 00.02.018.1.1 0 01.019.017.077.077 0 01.01.02.088.088 0 00.01.02c.017.026.031.053.045.078a.9.9 0 01.039.1l.007.021a.5.5 0 01.03.164.1.1 0 000 .023.092.092 0 01.005.027v7.37A1.752 1.752 0 0112.75 14.5zM1.5 6.883v5.87a.253.253 0 00.25.247h11a.253.253 0 00.249-.25V6.883L8.3 10.412a1.737 1.737 0 01-2.1 0zM7.25 1.5a.248.248 0 00-.15.053L2 5.383l5.1 3.83a.253.253 0 00.15.052.245.245 0 00.15-.053l5.1-3.829-5.1-3.83a.248.248 0 00-.15-.053z" transform="translate(.75 .75)"></path>
+											</svg>
+											<span class="TK-Aside-Menu-Button-Text">Contact Us</span>
+										</a>
+									</li>
+									<li class="TK-Aside-Menu-Item TK-bn">
+										<a href="/download" class="TK-Button TK-Button--CTA" data-track-instance="1">Get A Free Trial</a>
+									</li>
+								</ul>
+							</div>
+						<div class="tk-drawer-extension"></div>
+						<div class="tk-aside tk--mobile">
+							<ul class="TK-Aside-Menu">
+										<li class="TK-Aside-Menu-Item TK-Aside-Menu-Button--Search">
+											<a href="/search" class="TK-Aside-Menu-Link js-tlrk-nav-search-link" title="Search" data-match-exact-path="" data-track-instance="2">
+												<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 512 512" xml:space="preserve">
+													<path d="M504.4,464L378.9,338.5c25.6-34.8,40.8-77.7,40.8-124.2c0-115.7-94.1-209.8-209.8-209.8C94.2,4.5,0,98.6,0,214.3 C0,330,94.2,424.1,209.9,424.1c50.5,0,96.9-17.9,133.1-47.8l124.5,124.5c5.1,5.1,11.8,7.6,18.4,7.6s13.3-2.5,18.4-7.6 C514.6,490.7,514.6,474.2,504.4,464z M52.2,214.3c0-87,70.7-157.7,157.7-157.7s157.7,70.7,157.7,157.7c0,41-15.7,78.3-41.4,106.4 c-0.3,0.3-0.7,0.6-1,0.9c-0.7,0.7-1.3,1.4-1.9,2.2c-28.7,29.7-68.9,48.2-113.4,48.2C122.9,372,52.2,301.3,52.2,214.3z"></path>
+												</svg>
+											</a>
+										</li>
+	
+										<li class="TK-Aside-Menu-Item">
+											<button type="button" aria-label="Main Navigation" class="TK-Aside-Menu-Button TK-Aside-Menu-Button--Toggle-Drawer" id="js-tlrk-nav-drawer-button">
+												<svg id="menu" viewBox="0 0 100 80" class="WUG-Svg WUG-Svg-Hamburger" width="22" height="16">
+													<line x1="10" y1="40" x2="90" y2="40"></line>
+													<line x1="10" y1="40" x2="90" y2="40"></line>
+													<line x1="10" y1="40" x2="90" y2="40"></line>
+												</svg>
+											</button>
+										</li>
+									</ul>
+						</div>
+					</div>
+				
+				</div>
+				<button type='button' class="tk-over-lay">close mibile menu</button>
+		</nav>
+		<div class="section-bg"  data-placeholder-label="column 2">
+				
+				<img src='./telerik/hero-02.jpg' loading="lazy" title="hero-banner-page" alt="hero-banner-page" class="u-m-dn">
+				<img src='./telerik/home-mobile-hero.svg' loading='lazy' title="hero-banner-mobile" alt="hero-banner-mobile" class="u-dn u-m-db">
+
+		 </div>
+		  <section class="section--hero">
+		  
+				
+				 <div class="sf_colsIn-3  container u-zi-3" data-placeholder-label="column 3">
+					<div class="u-pt15">
+						<h1 class="Text--b9 u-mb2 u-fs70">Modern UI Made Easy</h1>
+					</div>
+					
+					<div>
+					<div class="Text--b9 u-fs28 u-fw4 u-mb5 u-s-mb3">
+							Build feature-rich, modern experiences for Web, <br class="u-l-dn">
+							Cross-Platform, Mobile and Desktop, faster than ever <br class="u-l-dn">
+							with <span class="u-fw5">Telerik</span>
+							and <span class="u-fw5">Kendo UI</span>
+							components.
+
+					</div>
+					<a href="/try/devcraft-ultimate" class="Btn Btn--prim u-mb1 u-s-db" data-sf-ec-immutable="" data-sf-marked="" data-track-instance="1">Download DevCraft Trial</a>
+					
+					<p class="Text--b9 u-fs16">DevCraft includes all Telerik .NET and Kendo UI JavaScript components, Embedded Reporting and productivity tools.</p>
+					</div>
+				 </div>
+				 
+				 <div class="Section-decor" data-placeholder-label="column 4">
+					<div class="section-decor-container">
+						<div class="container-col">
+							<button type="button">
+								<div class="u-mb1">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" alt="Web components small image" title="Web components small image"><circle cx="16" cy="16" r="15" style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;"></circle><ellipse cx="16" cy="16" rx="7.5" ry="15" style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;"></ellipse><path d="M5 26.2a15 15 0 0122 0M5 5.8a14.94 14.94 0 0011 4.8 14.94 14.94 0 0011-4.8M16 1v30M31 16H1" style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;"></path></svg>
+								</div>
+								
+								<h3 class="Text--b9 u-fs26 u-mb0 u-pr u-zi1 h5">Web <br>Components</h3>
+								<div class="Box-illustration u-tar">
+								
+									<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/ninja-and-kendoka.svg?sfvrsn=1e0b0ec1_13" loading="lazy" title="Ninja and Kendoka Web Components" alt="Ninja and Kendoka Web Components" class="u-mwn u-l-dn">
+									<div class="u-dn u-l-db u-fr u-l-db-svg">
+										<svg xmlns="http://www.w3.org/2000/svg" width="135.363" height="103.862">
+										  <defs>
+											<clipPath id="a">
+											  <path class="a" d="M0 0h41.174v26.008L0 26.011z" transform="rotate(-7 41.022 2.509)"/>
+											</clipPath>
+											<clipPath id="b">
+											  <path class="a" d="M0 16.95A16.945 16.945 0 0016.939 33.9a16.945 16.945 0 0016.94-16.95A16.944 16.944 0 0016.939 0 16.944 16.944 0 000 16.95z"/>
+											</clipPath>
+											<clipPath id="c">
+											  <path class="a" d="M0 45.646a45.631 45.631 0 0045.618 45.646 45.632 45.632 0 0045.617-45.646A45.632 45.632 0 0045.618 0 45.631 45.631 0 000 45.646z"/>
+											</clipPath>
+											<clipPath id="d">
+											  <path class="a" d="M0 45.646a45.631 45.631 0 0045.618 45.646 45.632 45.632 0 0045.617-45.646A45.632 45.632 0 0045.618 0 45.631 45.631 0 000 45.646"/>
+											</clipPath>
+											<style>.a{fill:none}.b{fill:#8174f2}.c{fill:#e26841}.f{fill:#31475c}.g{fill:#14254c}.i{fill:#e9ac6a}.k{fill:#dc7f1b}.l{fill:#fff}.m{clip-path:url(#d)}.n{fill:#231f20}.o{fill:#00264b}</style>
+										  </defs>
+										  <path class="b" d="M78.369 44.088c6.043-6.873 13.073-12.218 20.141-11.183 4.01.588 5.69 2.886 9.017 2.622 4.273-.34 9.357-4.755 14.453-19.784l7.594 3.718c-8.492 19.348-15.37 23.71-20.33 23.621-3.896-.067-5.835-2.868-11.549-3.86-7.563-1.313-14.474 1.814-19.326 4.866"/>
+										  <path class="b" d="M81.955 41.635c.05-12.118 7.224-21.907 16.416-23.999 7.153-1.627 13.317 1.905 15.194 3.088l-5.105 6.587a19.001 19.001 0 00-9.03-1.047c-11.797 1.599-17.136 14.515-17.475 15.37"/>
+										  <path class="c" d="M46.115 30.853L63.5 29.841a9.117 9.117 0 008.193-6.465 9.116 9.116 0 0110.545-6.298l9.214 1.876.005-5.29-12.272-1.809a9.115 9.115 0 00-10.165 6.777l-.419 1.652a9.121 9.121 0 01-6.626 6.605z"/>
+										  <path class="a" d="M43.213 5.018L84.08 0l3.17 25.814-40.867 5.021z"/>
+										  <g transform="translate(43.213)" clip-path="url(#a)">
+											<path class="c" d="M3.281 30.417l13.968-4.8a9.121 9.121 0 005.672-5.7l1.307-3.861a9.115 9.115 0 018.925-6.191l10.982.351.317-5.808-14.889.306a9.117 9.117 0 00-8.7 7.088l-1.259 5.514a9.123 9.123 0 01-4.182 5.781z"/>
+										  </g>
+										  <g>
+											<path class="a" d="M8.315 56.398a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 56.398a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 56.398z"/>
+											<path d="M18.756 103.726V93.434a8.136 8.136 0 00-16.271 0c.055 8.165.038 10.369.038 10.369s16.233-.064 16.233-.077z" fill="#0c1b38"/>
+											<path class="c" d="M9.397 103.8C6.733 87 19.671 68.3 36.667 68.3s30 18.7 27.335 35.5z"/>
+											<path class="a" d="M8.315 56.398a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 56.398a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 56.398z"/>
+											<path class="f" d="M32.594 77.944l20.585 18.023 18.441-9.87-13.977-11.186a8.479 8.479 0 01-3.178-6.619V55.63H32.594z"/>
+											<g>
+											  <path class="a" d="M8.315 56.398a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 56.398a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 56.398z"/>
+											  <path class="f" d="M39.025 77.944L18.441 95.967 0 86.097l13.976-11.186a8.479 8.479 0 003.178-6.619V55.63h21.871z"/>
+											</g>
+											<g>
+											  <path class="a" d="M8.315 56.398a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 56.398a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 56.398"/>
+											  <path class="g" d="M46.102 26.022h-7.719a21.449 21.449 0 00-21.442 21.456v21.885a8.58 8.58 0 008.577 8.582h20.584a8.58 8.58 0 008.577-8.582V34.604a8.58 8.58 0 00-8.577-8.582"/>
+											</g>
+											<g>
+											  <path class="a" d="M8.315 56.398a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 56.398a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 56.398"/>
+											  <path class="f" d="M52.749 54.987a16.94 16.94 0 11-16.94-16.95 16.945 16.945 0 0116.94 16.95"/>
+											</g>
+										  </g>
+										  <g>
+											<path class="a" d="M18.87 54.987a16.945 16.945 0 0016.939 16.95 16.945 16.945 0 0016.94-16.95 16.944 16.944 0 00-16.94-16.95 16.944 16.944 0 00-16.939 16.95z"/>
+											<g transform="translate(18.87 38.037)" clip-path="url(#b)">
+											  <path class="i" d="M2.159 39.423V8.734A14.785 14.785 0 0116.94-6.055 14.785 14.785 0 0131.72 8.734v33.083z"/>
+											</g>
+										  </g>
+										  <g>
+											<path class="a" d="M8.315 55.945a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 55.945a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 55.945z"/>
+											<g clip-path="url(#c)" transform="translate(8.315 10.299)">
+											  <path class="k" d="M20.419 48.309h7.719v-13.3z"/>
+											</g>
+											<path class="l" d="M36.839 64.622a9.639 9.639 0 005.634-1.415 9.666 9.666 0 003.289-3.285l-1.464-.9a7.987 7.987 0 01-2.715 2.717 7.979 7.979 0 01-4.658 1.164z"/>
+											<path class="a" d="M8.315 55.945a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 55.945a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 55.945"/>
+											<g class="m">
+											  <path class="n" d="M46.746 48.097h-3.181a1.484 1.484 0 011.484-1.485h.216a1.484 1.484 0 011.481 1.485"/>
+											</g>
+											<path class="a" d="M8.315 55.945a45.631 45.631 0 0045.618 45.646A45.632 45.632 0 0099.55 55.945a45.632 45.632 0 00-45.617-45.646A45.631 45.631 0 008.315 55.945"/>
+											<g class="m">
+											  <path class="n" d="M27.876 48.097h-3.18a1.484 1.484 0 011.484-1.485h.216a1.484 1.484 0 011.48 1.485"/>
+											</g>
+											<path class="g" d="M18.87 44.413h35.165v-2.237H18.87zM18.87 52.106h35.165v-2.237H18.87zM18.87 67.69h33.021v-2.237H18.87zM18.87 59.997h35.165V57.76H18.87z"/>
+											<path class="a" d="M53.933 101.591A45.646 45.646 0 108.315 55.945a45.632 45.632 0 0045.618 45.646z"/>
+											<path class="o" d="M95.595 69.92v-8.8H57.856v8.8a8.247 8.247 0 01-6.436 8.048A16.482 16.482 0 0038.558 94.05a133.5 133.5 0 01-.918 9.715l77.252.1V94.05a16.481 16.481 0 00-12.861-16.083 8.247 8.247 0 01-6.436-8.047"/>
+											<path class="o" d="M76.725 81.285a18.931 18.931 0 01-18.869-18.878v-9.441a18.87 18.87 0 1137.739 0v9.441a18.931 18.931 0 01-18.87 18.878"/>
+											<path class="b" d="M57.427 56.829h38.6v-8.154h-38.6z"/>
+											<path class="i" d="M88.611 62.223H65.484a4.628 4.628 0 010-9.256h23.127a4.628 4.628 0 010 9.256"/>
+											<path class="o" d="M64.932 58.022a1.5 1.5 0 113 0M83.373 58.114a1.5 1.5 0 113 0"/>
+											<path class="k" d="M73.723 62.223h4.016v-7.724z"/>
+											<path class="l" d="M77.408 71.997a1.93 1.93 0 001.716 1.716h3.429a1.93 1.93 0 001.717-1.716h-6.862z"/>
+										  </g>
+										</svg>
+									</div>
+								
+								</div>
+							</button>
+						
+						</div>
+						<div class="container-col">
+							<button type="button" >
+							
+								<div class="u-mb1">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" alt="Desktop Components small Image" title="Desktop Components small Image"><path d="M16 20a1 1 0 101 1 1 1 0 00-1-1z" style="fill:#a3d8f1;"></path><path style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" d="M20 25l1.42 4.71a1 1 0 01-1 1.29h-8.88a1 1 0 01-1-1.29L12 25M26.65 25H29a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v20a2 2 0 002 2h23.65z"></path></svg>
+								</div>
+								<h3 class="Text--b9 u-fs26 u-mb0  u-pr u-zi1 h5">Desktop <br>Components</h3>
+								<div class="Box-illustration u-tar">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/ninja.svg?sfvrsn=699402b1_13" loading="lazy" titile="Ninja Desktop Components" class="u-mwn u-l-dn" alt="Ninja Desktop Components">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/mobile-ninja.svg?sfvrsn=e0a2ea74_3" loading="lazy" title="Mobile Ninja Desktop Components" alt="Mobile Ninja Desktop Components" class="u-dn u-l-db u-fr">
+								</div>
+						
+							
+							</button>
+						
+						</div>
+						<div class="container-col">
+						
+							<button type='button'>
+								<div class="u-mb1">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" title="Mobile Components small image" alt="Mobile Components small image"><path d="M19 26a1 1 0 101 1 1 1 0 00-1-1z" style="fill:#a3d8f1;"></path><path style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" d="M5 14v-3"></path><rect style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" x="13" y="8" width="12" height="23" rx="2"></rect><path style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" d="M25 24h4a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v19a2 2 0 002 2h10"></path></svg>
+								</div>
+								<h3 class="Text--b9 u-fs26 u-mb0  u-pr u-zi1 h5">Mobile <br>Components</h3>
+								<div class="Box-illustration u-tar">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/ninja.svg?sfvrsn=699402b1_13" loading="lazy" title="Ninja Mobile Components Desktop" alt="Ninja Mobile Components Desktop" class="u-mwn u-l-dn">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/mobile-ninja.svg?sfvrsn=e0a2ea74_3" loading="lazy" title="Mobile Ninja for Mobile Components" alt="Mobile Ninja for Mobile Components" class="u-dn u-l-db u-fr">
+								</div>
+								
+							</button>
+						</div>
+						<div class="container-col">
+							<button type='button'>
+							<div class="u-mb1">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" alt="Reporting &amp; Dashboards small image" title="Reporting &amp; Dashboards small image"><path style="fill:none;stroke-miterlimit:10;stroke-width:2px;stroke:#a3d8f1;" d="M16 0v2M8 2.14l1 1.74M2.14 8l1.74 1M0 16h2M2.14 24l1.74-1M8 29.86l1-1.74M16 32v-2M24 29.86l-1-1.74M29.86 24l-1.74-1M32 16h-2"></path><path style="fill:none;stroke-miterlimit:10;stroke-width:2px;stroke:#a3d8f1;" d="M24.66 11A10 10 0 1121 7.34M16 26V16l-5-8.65"></path><path style="fill:none;stroke-miterlimit:10;stroke-width:2px;stroke:#a3d8f1;" d="M29 8.51A15.05 15.05 0 0023.49 3l-7.3 12.66a.09.09 0 00.13.13z"></path></svg>
+							</div>
+							<h3 class="Text--b9 u-fs26 u-mb0  u-pr u-zi1 h5">Reporting &amp; <br>Dashboards</h3>
+							<div class="Box-illustration u-tar">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/ninja.svg?sfvrsn=699402b1_13" loading="lazy" title="Reporting &amp; Dashboards" alt="Ninja Reporting &amp; Dashboards" class="u-mwn u-l-dn">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/mobile-ninja.svg?sfvrsn=e0a2ea74_3" loading="lazy" class="u-dn u-l-db u-fr" alt="Mobile Ninja Reporting &amp; Dashboards">
+							</div>
+							</button>
+						</div>
+						<div class="container-col">
+							<button type='button'>
+							<div class="u-mb1">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" title="Testing &amp; Debugging small image" alt="Testing &amp; Debugging small image"><circle style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" class="cls-1" cx="16" cy="16" r="6.58"></circle><path style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" class="cls-1" d="M16 13.1a2.9 2.9 0 012.9 2.9M30.6 19.39a14.57 14.57 0 000-6.78h-2.49A12.82 12.82 0 0027 9.83l1.76-1.76a15 15 0 00-4.79-4.79L22.17 5a12.82 12.82 0 00-2.78-1.15V1.4a14.57 14.57 0 00-6.78 0v2.49A12.82 12.82 0 009.83 5L8.07 3.28a15 15 0 00-4.79 4.79L5 9.83a12.82 12.82 0 00-1.15 2.78H1.4a14.57 14.57 0 000 6.78h2.49A12.82 12.82 0 005 22.17l-1.72 1.76a15 15 0 004.79 4.79L9.83 27a12.82 12.82 0 002.78 1.15v2.45a14.57 14.57 0 006.78 0v-2.49A12.82 12.82 0 0022.17 27l1.76 1.76a15 15 0 004.79-4.79L27 22.17a12.82 12.82 0 001.15-2.78zM20.79 11.21l8.76-8.76"></path></svg>
+							</div>
+							<h3 class="Text--b9 u-fs26 u-mb0  u-pr u-zi1 h5">Testing &amp;<br>Debugging</h3>
+							<div class="Box-illustration u-tar">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/testing.svg?sfvrsn=a4415b0f_10" loading="lazy" title="Testing &amp; Debugging collapsed" alt="Testing &amp; Debugging collapsed" class="u-mwn u-l-dn">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/mobile-testing.svg?sfvrsn=a5ff04cf_4" loading="lazy" title="Mobile Testing &amp; Debugging" alt="Mobile Testing &amp; Debugging" class="u-dn u-l-db u-fr">
+							</div>
+							</button>
+						</div>
+						<div class="container-col">
+							<button type='button'> 
+								<div class="u-mb1">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" title="UI/UX Tools small Image" alt="UI/UX Tools small Image"><circle style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" cx="4.03" cy="28" r="3"></circle><path style="fill:none;stroke:#a3d8f1;stroke-miterlimit:10;stroke-width:2px;" d="M11.41 24.86a10 10 0 10-4.25-4.23M6.15 30.12l9.82-9.82v-4.25h-4.24l-9.82 9.83M1 8V1h7M31 24v7h-7M24 1h7v7"></path></svg>
+								</div>
+								<h3 class="Text--b9 u-fs26 u-mb0  u-pr u-zi1 h5">UI/UX Tools</h3>
+								<div class="Box-illustration u-tar">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/themebuilder/themebulder_broduct_box.svg?sfvrsn=ebfad268_6" loading="lazy" alt="UI/UX Tools collapsed image" title="UI/UX Tools collapsed image" class="u-mwn u-l-dn">
+								<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/themebuilder/themebulder-broduct-box960.svg?sfvrsn=596d44a6_3/ThemeBulder-Broduct-box960.svg" loading="lazy" alt="UI/UX Tools Mobile Image" title="UI/UX Tools Mobile Image" class="u-dn u-l-db u-fr">
+								</div>
+							</button>
+						
+						</div>
+					
+					</div>
+					<h2 class="Text--b7 u-mb1 h6 Text-b7-title">Product Bundles</h2>
+					<div class="row row--equal u-mb5 Text-b7-row" data-sf-element="Row">
+					  <div id="ContentPlaceholder1_C360_Col00" class=" Text-b7-colsIn u-mb6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+						<div class=" Text-b7-box">
+							<div class="row Text-b7-box-row">
+							<div class="col-3 Text-b7-box-row">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/pricing/characters_ninja-kendoka_homepage.png?sfvrsn=ce8ae6bb_6/Characters_ninja-kendoka_homepage.png" title="DevCraft Bundle" alt="DevCraft Bundle">
+							</div>
+							<div class="col-9">
+							<h3 class="u-c-white u-fs28 u-m0 u-pb1 h5 Text-b7-box-h3">Telerik® DevCraft</h3>
+							<p class="u-c-grey8 u-fs18 u-mb2 Text-b7-box-grey8" style="letter-spacing:-0.4px;">.NET controls, Kendo UI JavaScript components, embedded reporting, automated testing and productivity tools.</p>
+							<a href="/devcraft" class="Btn Btn--ghost u-c-white u-fs19 track--learn-more-devcraft Text-b7-box-devcraft" data-track-instance="7">More about DevCraft</a>
+							</div>
+							</div>
+						</div>
+					  </div>
+					  <div id="ContentPlaceholder1_C360_Col01" class="Text-b7-colsIn u-mb6" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+						<div class=" Text-b7-box">
+							<div class="row Text-b7-box-row">
+							<div class="col-3 Text-b7-box-row">
+							<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/pricing/characters_kendoka_homepage.png?sfvrsn=e3138_5/Characters_kendoka_homepage.png" title="Kendo UI" alt="Kendo UI"></div>
+							<div class="col-9">
+							<h3 class="u-c-white u-fs28 u-m0 u-pb1 h5 Text-b7-box-h3">Kendo UI®</h3>
+							<p class="u-c-grey8 u-fs18 u-mb2 Text-b7-box-grey8">UI components for JavaScript frameworks including<br>jQuery, Angular, React, and Vue.</p>
+							<a href="/kendo-ui" class="Btn Btn--ghost u-c-white u-fs19 track--learn-more-kendo Text-b7-box-devcraft" data-sf-ec-immutable="" data-track-instance="2">More about Kendo UI</a>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="Text-b7-box u-mb6">
+					<div class="u-fl u-pr3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="111px" height="104px" viewBox="0 0 110.604 104"><defs><clipPath id="banr-a"><circle cx="52" cy="52" r="52" transform="translate(487 188)" stroke="#707070" fill="#fff"></circle></clipPath>
+						 <clipPath id="banr-b"><path class="b" d="M38.6 0H0v11.121h38.6z"></path></clipPath>
+						 <clipPath id="banr-c"><circle class="c" cx="50.395" cy="50.395" r="50.395" transform="translate(-1.001 -2)"></circle></clipPath>
+						 <clipPath id="banr-d"><path class="b" d="M0 15.028a14.932 14.932 0 0014.835 15.028 14.932 14.932 0 0014.834-15.028A14.932 14.932 0 0014.835 0 14.932 14.932 0 000 15.028z"></path></clipPath>
+						 <clipPath id="banr-e"><circle class="c" cx="50.895" cy="50.895" r="50.895" transform="translate(.999 -1)"></circle></clipPath>
+						 <clipPath id="banr-f"><path class="b" d="M0 90.786h75.274V0H0z"></path></clipPath>
+						 <style>.c {
+												fill: #fff
+											}
+
+											.b,
+											.f,
+											.r,
+											.t {
+												fill: none
+											}
+
+											.e {
+												fill: #5777ea
+											}
+
+											.f {
+												stroke: #0557fc
+											}
+
+											.f,
+											.r,
+											.t {
+												stroke-miterlimit: 10
+											}
+
+											.f {
+												stroke-width: .5px
+											}
+
+											.g {
+												fill: #859cf1
+											}
+
+											.i {
+												fill: #c3d7f5
+											}
+
+											.l {
+												fill: #e26841
+											}
+
+											.n {
+												fill: #31475c
+											}
+
+											.q {
+												fill: #e9ac6a
+											}
+
+											.r {
+												stroke: #fff;
+												stroke-width: 4px
+											}
+
+											.s {
+												fill: #231f20
+											}
+
+											.t {
+												stroke: #14254c;
+												stroke-width: 2px
+											}
+
+											.u {
+												fill: #22b573
+											}
+
+											.w {
+												fill: #00264b
+											}
+							</style>
+						 </defs>
+						 <g clip-path="url(#banr-a)" transform="translate(-480.396 -188)"><path class="e" d="M365.479 160.792H601.74v66.117H365.479z"></path><path class="f" d="M589.487 174.707v52.202"></path><path class="g" d="M505.906 174.707h72.348v12.889h-72.348zM505.906 200.808h72.348v12.889h-72.348z"></path><path class="f" d="M583.936 179.109v4.084M581.894 181.151h4.084M583.936 192.234v4.084M581.894 194.276h4.084M583.936 205.211v4.084M581.894 207.253h4.084M583.936 218.187v4.084M581.894 220.229h4.084"></path><path class="g" d="M398.027 174.707h107.409v12.889H398.027zM398.027 200.808h107.409v12.889H398.027z"></path><path class="f" d="M589.487 174.707H365.48"></path><path d="M596.951 166.791h-2.68l1.339 2.106z" fill="#0557fc"></path><path class="i" d="M398.027 187.831h107.409v12.889H398.027zM398.027 213.785h107.409v12.889H398.027zM505.906 213.785h72.348v12.889h-72.348z"></path><path class="f" d="M505.628 174.707v52.202M398.027 174.707v52.202"></path><path class="e" d="M365.479 117.288H601.74v43.504H365.479z"></path><path stroke-miterlimit="10" stroke="#0557fc" fill="none" d="M589.487 131.679v29.113"></path><path class="f" d="M505.436 140.197v20.595M398.024 144.326v16.466M601.74 160.792H365.479M601.74 139.379H365.479M510.482 145.996h64.837v9.701h-64.837zM433.384 145.996h68.415v9.701h-68.415z"></path><path class="e" d="M365.479 226.631H601.74v66.117H365.479z"></path><path class="f" d="M589.487 240.546v52.202"></path><path class="g" d="M505.906 240.546h72.348v12.889h-72.348zM505.906 266.647h72.348v12.889h-72.348z"></path><path class="f" d="M583.936 244.948v4.084M581.894 246.99h4.084M583.936 258.073v4.084M581.894 260.115h4.084M583.936 271.049v4.084M581.894 273.091h4.084M583.936 284.026v4.084M581.894 286.068h4.084"></path><path class="g" d="M398.027 240.546h107.409v12.889H398.027zM398.027 266.647h107.409v12.889H398.027z"></path><path class="f" d="M589.487 240.546H365.48"></path><path class="i" d="M398.027 253.67h107.409v12.889H398.027zM398.027 279.623h107.409v12.889H398.027zM505.906 253.67h72.348v12.889h-72.348zM505.906 279.623h72.348v12.889h-72.348z"></path><path class="f" d="M505.628 240.546v52.202M398.027 240.546v52.202M692.486 226.546H468.479"></path></g>
+						 <path class="b" d="M38.6 8.001H0v11.121h38.6z"></path><g transform="translate(0 8.001)" clip-path="url(#banr-b)"><path class="l" d="M38.6 8.449l-12.736-5.8a7.24 7.24 0 00-8.22 1.578 7.24 7.24 0 01-9.827.576L1.959 0 0 3.807l8.052 5.907a7.242 7.242 0 009.736-1.064l.912-1.032a7.25 7.25 0 017.156-2.267z"></path></g>
+						 <path class="l" d="M38.401 16.362l-11.836-.328a7.271 7.271 0 00-5.859 2.718l-2.066 2.566a7.247 7.247 0 01-8.44 2.165l-8.147-3.394-1.869 4.323 11.265 4.006a7.259 7.259 0 008.522-2.911l2.494-3.833a7.3 7.3 0 014.763-3.2z"></path><g transform="translate(7.377 3.041)" clip-path="url(#banr-c)"><path class="l" d="M3.617 78.25a24.422 24.422 0 0123.947-28.129A24.421 24.421 0 0151.509 78.25z"></path><path class="n" d="M23.996 58.872l18.027 15.979L58.172 66.1l-12.238-9.918a7.553 7.553 0 01-2.784-5.868V39.088H23.996z"></path><path class="n" d="M29.629 58.872L11.602 74.851l-16.149-8.75 12.238-9.918a7.553 7.553 0 002.784-5.868V39.088h19.154z"></path><path d="M35.826 12.836h-6.76a18.9 18.9 0 00-18.778 19.023v19.4a7.561 7.561 0 007.511 7.609h18.027a7.561 7.561 0 007.511-7.609V20.445a7.561 7.561 0 00-7.511-7.609" fill="#14254c"></path><path class="n" d="M41.647 38.517a14.932 14.932 0 01-14.834 15.028 14.932 14.932 0 01-14.835-15.028 14.932 14.932 0 0114.835-15.028 14.932 14.932 0 0114.834 15.028"></path><g><path class="b" d="M11.978 38.517a14.932 14.932 0 0014.835 15.028 14.932 14.932 0 0014.834-15.028 14.932 14.932 0 00-14.834-15.028 14.932 14.932 0 00-14.835 15.028z"></path><g clip-path="url(#banr-d)" transform="translate(11.978 23.489)"><path class="q" d="M1.89 34.954V7.745A13.029 13.029 0 0114.834-5.368 13.029 13.029 0 0127.778 7.745v29.331z"></path></g>
+						 </g>
+						 <g><path class="l" d="M20.616 42.131h6.76V30.337z"></path><path class="r" d="M26.422 46.692a7.889 7.889 0 01-4.508-1.137 7.945 7.945 0 01-2.629-2.663"></path><path class="s" d="M36.39 32.81h-2.786a1.309 1.309 0 011.3-1.317h.186a1.308 1.308 0 011.3 1.317M19.865 32.81h-2.786a1.309 1.309 0 011.3-1.317h.186a1.308 1.308 0 011.3 1.317"></path><path class="t" d="M11.978 28.435h30.8M11.978 35.283h30.8M11.978 48.98h28.918M11.978 42.132h30.8"></path></g>
+						 </g>
+						 <path class="u" d="M89.027 29.106c2.561-.818 4.224.061 6.133-1.067 2.452-1.449 4.214-5.562 2.933-16h5.6c.5 14-2.351 18.61-5.333 20-2.344 1.1-4.307-.008-8 1.067-4.893 1.429-8.116 5.303-10.133 8.536 1.629-5.858 4.284-11.093 8.8-12.536z"></path><path class="u" d="M80.762 40.308c-3.261-6.786-1.906-14.205 2.666-17.871a12.938 12.938 0 019.334-2.4l-1.067 5.067a11.817 11.817 0 00-5.333 1.868c-6.162 4.1-5.643 12.766-5.6 13.336"></path><g transform="translate(7.377 3.041)" clip-path="url(#banr-e)"><path class="w" d="M85.279 65.457v-7.789H51.86v7.789a7.3 7.3 0 01-5.7 7.124 14.59 14.59 0 00-11.389 14.237v2.758h67.6v-2.758a14.59 14.59 0 00-11.39-14.237 7.3 7.3 0 01-5.7-7.124"></path><path class="w" d="M68.571 75.521a16.76 16.76 0 01-16.71-16.714v-8.356A16.76 16.76 0 0168.57 33.737a16.761 16.761 0 0116.71 16.714v8.356a16.761 16.761 0 01-16.709 16.714"></path><path class="b" d="M34.771 89.576h75.274V-1.21H34.771z"></path><g transform="translate(34.771 -1.21)" clip-path="url(#banr-f)"><path class="u" d="M16.71 55.079h34.179v-7.217H16.71z"></path><path class="q" d="M44.324 59.855H23.848a4.108 4.108 0 01-4.1-4.094 4.108 4.108 0 014.1-4.1h20.48a4.108 4.108 0 014.1 4.1 4.109 4.109 0 01-4.1 4.1"></path><path class="w" d="M23.355 56.137a1.329 1.329 0 112.658 0M39.685 56.218a1.329 1.329 0 112.658 0"></path><path class="l" d="M31.141 59.854h3.556v-6.837z"></path></g>
+						 <path class="r" d="M69.329 70.989a8.058 8.058 0 004.557-1.14 7.977 7.977 0 002.658-2.66"></path></g>
+						 </svg>
+						 </div>
+						 <div class="u-oh">
+						 <div class="row">
+						 <div class="col-8 u-vam">
+						 <h5 class="Text--b9 u-fs28 u-m0">Give our Grids a Spin!</h5>
+						 <p class="Text--b9 u-fs18 u-fw2 u-mb2">We know how challenging building a data grid can be. As a result, our full-featured and high performance data grids are the flagship components of each of our component libraries. Before you determine how you are going to build a grid
+											view into your application, you’ll want to check ours out.</p>
+											</div>
+											<div class="col-4 u-vam u-tar">
+											<a href="/kendo-ui/grid" class="Btn Btn--ghost u-db u-c-white u-fs19 u-mb1 track--js-data-grid u-mb-1 Text-b7-box-devcraft">JavaScript Data Grids</a>
+											<a href="/dotnet/grid" class="Btn Btn--ghost u-db u-c-white u-fs19 u-ml0 track--dotnet-data-grid Text-b7-box-devcraft" data-sf-ec-immutable="">.NET Data Grids</a>
+						 </div></div></div>
+					 </div>
+					 <div class="Card-tint-content u-mb6">
+						 <div class="Card-tag">Latest News</div>
+						 <div class="Card-content">
+						 Check out our latest release: 
+						 <a class="u-c-link" href="/support/whats-new">2024 Q2 has a lot to offer</a>
+						 , including bringing artificial intelligence (AI) prompts to application interfaces, design-to-code productivity enhancements, accessibility improvements, the first to market Blazor Spreadsheet control, integrations with Next.js, and so much more.</div>
+					 </div>
+					 <div class="z-row-j is-intoview-reveal-content Text-b7-box-grey8" data-sf-element="Row">
+						  <div id="" class="z-row-j-item col-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+						<ul class="BulletCheck--custom"><li>Feature-rich UI components for all .NET and JavaScript frameworks</li></ul></div>
+						  <div id="" class="z-row-j-item col-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+						<ul class="BulletCheck--custom"><li>Professionally designed components and themes for beautiful, engaging and always modern apps</li></ul></div>
+						  <div id="" class="z-row-j-item col-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+
+						<ul class="BulletCheck--custom"><li>Industry leading support delivered from the engineers who built the product</li></ul></div>
+					</div>
+					<div class="z-row-j is-intoview-reveal-content Text-b7-box-grey8" data-sf-element="Row">
+					  <div id="" class="z-row-j-item col-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+					<ul class="BulletCheck--custom"><li>On demand technical product training</li></ul></div>
+					  <div id="" class="z-row-j-item col-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+					<ul class="BulletCheck--custom"><li>Performance, accessibility, localization and security guaranteed</li></ul></div>
+					  <div id="" class="z-row-j-item col-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+
+					<ul class="BulletCheck--custom"><li>Continuous innovation to cover your needs today and tomorrow</li></ul></div>
+					</div>
+					 
+					 <div class="boxes-back-overlay icon-x"></div>
+					 
+					 
+					 <div class="u-l-pb4 u-l-mb4 u-s-pb0 u-s-mb0 u-tac u-s-pt2 Logos Logos-jos">
+						<div class="u-dib Logos-row Logos-row-1">
+						<!-- NASA -->
+						 <svg class="u-dib u-vam u-m2" xmlns="http://www.w3.org/2000/svg" width="61.395" height="51.6" viewBox="0 0 61.4 51.6" aria-labelledby="titleNasa"><title id="titleNasa">Nasa</title>
+						 <g fill="#fff" opacity="0.7"><path d="M41.6 30.8h-.7l.5 1.6c.8 2.9.6 5.1-.3 6.4-1.2 1.4-3.6 1.4-6.9 0v.5a11.5 11.5 0 0 0 4.5 1 3.7 3.7 0 0 0 2.7-.9c1-1 1.4-2.8 1-5.3a21.1 21.1 0 0 0-.8-3.3Zm-19.2-5.3-.3.9 1.2-.2-.6-1.4Zm-12.8 3v.4a1 1 0 0 0 .4.7l1.6-.4L11 28Z" data-name="Path 203276"></path><path d="M61.4 3 60 5a46.8 46.8 0 0 1-9.5 7.4A26.3 26.3 0 0 0 28.5 0 25.9 25.9 0 0 0 2.3 25.8a25 25 0 0 0 .7 5.8 29.8 29.8 0 0 0-3 1.7l.6.2a28 28 0 0 1 2.6-1.3A25.8 25.8 0 0 0 10 44l.4.4L7 47.5v.9a42 42 0 0 1 3.9-3.6 26 26 0 0 0 43.5-19 24.9 24.9 0 0 0-2.3-10.4c4.3-3.8 7.7-7.9 9.2-12.5Zm-57 28.6 2.4-1a.5.5 0 0 1 0-.6 1.2 1.2 0 0 0 .8-.7L4.2 31a24.5 24.5 0 0 1 19-29.1 24 24 0 0 1 5.2-.6 25.2 25.2 0 0 1 21 11.7 56 56 0 0 1-3 1.6 120.3 120.3 0 0 1-11.4 5c-3.3-4-7.4-7.8-11.6-9.6-3.8-1.6-5.7-.8-6.6.2C15 12 15.2 16 17 20.6a.5.5 0 0 1 .2.4 24.2 24.2 0 0 0 1.3 2.8 11.2 11.2 0 0 1 .7 1l-1.9.7-.9.3v2l3.6-.9v-.3l.1-.1v-.1l.1-.2.2-.4v-.2l.2-.4.2-.7-.9.3-.9-1.7c-3-6-3.5-10.7-1.4-12.4C19.5 9 23 10 27 13a44.4 44.4 0 0 1 7.3 7l-7.5 2.5.6 1.7.4.9 3-.9a2.6 2.6 0 0 1 .1-1c.4-1.3 1.7-2.4 4.2-2.3h.8l.8.2c.9.2.9.2 1.2-.1l.2-.2a.3.3 0 0 1 .3 0 .2.2 0 0 1 .1.2v.7a49.6 49.6 0 0 0 11-5.4c-2.1 1.8-4 3.2-5.7 4.5l-.2.2-.3.2h-.8l.3.4h-.2l-.1.2-4 2.7c-.2-.5-.5-1-.9-1.4h-.2l-.2-.1-.3-.2h-.2l-.1-.1.8 1.2a9.8 9.8 0 0 1 .6 1l-.4.2-.1.1-.3.1a8.8 8.8 0 0 0-2-.8c-1-.3-1.4-.8-1.4-1v-.2a.9.9 0 0 1 .5-.8 2.9 2.9 0 0 1 1.9-.3h.4l.3.2h.2l.2.1a6.5 6.5 0 0 1 1 .6v-1.5c-.3.2-.4.2-1.3 0l-.6-.2h-1c-2.5-.2-3.8.8-4.1 2a2.8 2.8 0 0 0-.1.7 2.7 2.7 0 0 0 1.8 2.4l.8.4.5.1-.2.1-.3.2-1.8 1-.2.2-.1.1-.3-.2v.4H31l-.2.2-1.2.9-.1.1-.2.1a2 2 0 0 1-.4-.5l-1.7-4.4-1-2.6-.6-1.6H21v.1a2.1 2.1 0 0 1 .8 1 17.5 17.5 0 0 1-.6 2.2l-.2 1-.2.8h-.1v.2l-.2.4v.2l-.7 2.2s0 .2-1.3 1.1h3.2c-.2 0-.9-.6-.4-2v-.1h3.2c.5 1.3.6 1.3-.5 2.1h5l-.4.3h-.1l-.1.3-2.7 1.8c-.3-.6-.8-1.1-1.3-1.7H24a.3.3 0 0 1-.3-.4.5.5 0 0 1 0-.4l-1.1-1.5h-.9v.2c1 1.7 2.2 3 3.2 4.2a94.3 94.3 0 0 0-13.6 10.6l-.5-.4a24.6 24.6 0 0 1-6.5-11.6Zm39.8-7.9 1.3 3.5h-2.4l.6-1.7.5-1.8Zm-8 4.5a.8.8 0 0 1 0 .7 1.7 1.7 0 0 1-1.1.6 4 4 0 0 1-2.5-.2l.3-.2.2-.2 2-1.2.1-.1.3-.1a1.7 1.7 0 0 1 .8.7Zm-12-1.1h-2.5l.2-.5.3-1.2.5-1.5.2-.3v.2l1 2.3.3 1Zm29-1.3a24.8 24.8 0 0 1-41.3 18.3c4-3.4 8.7-6.9 13.6-10.2.8 1 2.1 2.8 3 3a.6.6 0 0 0 .7-.2.7.7 0 0 0 .3-.5c0-.4-.7-1-1.5-1.6a17.7 17.7 0 0 1-1.6-1.3l2.6-1.6 2-1.2.2-.1.2-.2v.6a9.7 9.7 0 0 0 .8-.6h.3a6.3 6.3 0 0 0 4.8-.1c1.3-.6 2-1.5 1.9-2.4a3 3 0 0 0-1-1.7l.1-.2h.2l.3.2a3 3 0 0 1 .7 1.4v.3l1 2 .2-.1.1-.2v-.1l.2-.2a32.4 32.4 0 0 0-2-3.6l3.7-2.5.3-.1.3-.2-.8 3-1.2 3.8a1 1 0 0 1 0 .3l-.1.1-.3-.2-.2.2-.2.1-.5.5h3s-.9-.7-.2-2.2H46c.5 1.3.6 1.3-.4 2.2H51a1.3 1.3 0 0 1-.8-.9c-1.1-2.6-2.6-7-3.2-8.4h-2.2l.3-.3.3-.2q3-2.1 5.6-4.4a23.2 23.2 0 0 1 2 9.5Z" data-name="Path 203277"></path><path d="M34.5 22.6a.6.6 0 0 0-.4.5v.1l2-.7a2.6 2.6 0 0 0-1.6.1ZM22 30.2l-.2-.1v.3c.1 0 .2 0 .2-.2Z" data-name="Path 203278"></path><circle cx="1" cy="1" r="1" data-name="Ellipse 970" transform="translate(27.7 2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 971" transform="translate(28.9 5.2)"></circle><path d="M33.5 10.8a.2.2 0 0 0-.2.2.2.2 0 0 0 .2.2.2.2 0 0 0 .2-.2.3.3 0 0 0-.2-.2Z" data-name="Path 203279"></path><circle cx="1" cy="1" r="1" data-name="Ellipse 972" transform="translate(26.9 6.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 973" transform="translate(28.9 8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 974" transform="translate(26 4.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 975" transform="translate(22.9 6.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 976" transform="translate(23.3 7.2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 977" transform="translate(24 7.6)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 978" transform="translate(22.9 8.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 979" transform="translate(18 11.6)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 980" transform="translate(19.3 12.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 981" transform="translate(18.5 30)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 982" transform="translate(18.5 34.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 983" transform="translate(15.7 37.2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 984" transform="translate(12.4 38.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 985" transform="translate(11.6 36)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 986" transform="translate(11.6 37.6)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 987" transform="translate(8.8 36.4)"></circle><path d="M18.7 41.5a.2.2 0 0 0 .1 0 .2.2 0 0 0-.3 0h.2Zm2.6-2.1a.2.2 0 0 0-.4 0c0 .1 0 .2.2.2 0 0 .2 0 .2-.2Zm.2 2.2a.2.2 0 1 0 .1.2l-.1-.2Z" data-name="Path 203280"></path><circle cx="1" cy="1" r="1" data-name="Ellipse 988" transform="translate(30.9 38.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 989" transform="translate(26 40.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 990" transform="translate(39.3 42.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 991" transform="translate(40.1 33.2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 992" transform="translate(38.5 34.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 993" transform="translate(40.1 34.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 994" transform="translate(38.5 37.2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 995" transform="translate(43.3 31.6)"></circle><path d="M44.8 34a.2.2 0 0 0 .1-.2l-.2-.2-.1.2c0 .1 0 .2.2.2Z" data-name="Path 203281"></path><circle cx="1" cy="1" r="1" data-name="Ellipse 996" transform="translate(47.4 34.4)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 997" transform="translate(44.1 37.2)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 998" transform="translate(46.1 34.8)"></circle><circle cx="1" cy="1" r="1" data-name="Ellipse 999" transform="translate(45.7 38.4)"></circle><path d="M48 33.7c-.2 0-.2-.2-.3-.2l-.1-.7-.1.7a.3.3 0 0 0-.2.2l-.8.1h.8a.3.3 0 0 0 .2.3v.7l.1-.7.2-.2.8-.2h-.7Zm-2.4 5.4v-.7l-.1.7a.3.3 0 0 0-.2.2l-.8.1h.8a.3.3 0 0 0 .2.3v.7l.1-.7.2-.2.7-.2h-.7a.3.3 0 0 0-.2-.2ZM21.8 13.3v.7l.1-.7.2-.2h.8l-.7-.2-.2-.2-.1-.7v.7a.3.3 0 0 0-.3.2h-.7l.7.1c0 .2 0 .3.2.3Zm11.6-7.6.1.7v-.7c.2 0 .3-.1.3-.2l.7-.1h-.7c0-.2-.1-.3-.2-.3v-.7l-.2.7a.3.3 0 0 0-.2.2l-.7.1h.7a.2.2 0 0 0 .2.3Zm-14 38.2v-.7.7a.3.3 0 0 0-.3.2l-.6.1h.6a.3.3 0 0 0 .3.3v.7l.1-.7a.5.5 0 0 0 .3-.2l.7-.2h-.7l-.4-.2ZM10.1 30a1 1 0 0 1-.2-.3 1.4 1.4 0 0 1-.3-1v-4.5l2 3.5.8 1.4.9 1.4h4c-.6-.7-.9-1-.9-1.4v-7c0-.5.1-.5.7-1.1h-2.9s.8.9.8 1.2v4.7a1.6 1.6 0 0 0-.2-.4l-3.3-5.6h-4c.8 1 .8 1 .8 1.3v7c0 .3-.2.8-1 1.2h3l-.1-.1Z" data-name="Path 203282"></path></g>
+						 </svg>
+
+						 <!-- MS -->
+						 <svg class="u-dib u-vam u-m2 Logos-wide" xmlns="http://www.w3.org/2000/svg" width="121" height="26" viewBox="0 0 121 26" aria-labelledby="titleMS"><title id="titleMS">Microsoft</title>
+						 <path fill="#fff" fill-rule="evenodd" d="M82.6 17.4a2.4 2.4 0 0 1-1.3 1.3 3.5 3.5 0 0 1-2.1 0 2.7 2.7 0 0 1-1.7-1.3 5.4 5.4 0 0 1-.4-2.9 3.7 3.7 0 0 1 1-2.3 2.7 2.7 0 0 1 1.8-.7 2.8 2.8 0 0 1 2.2.7 3.7 3.7 0 0 1 1 2.4 6.1 6.1 0 0 1-.5 2.8m7.8-8a7 7 0 0 1 3.7.3v2.5a4.7 4.7 0 0 0-2.8-.8 1.4 1.4 0 0 0-1.3.7 1.2 1.2 0 0 0 .4 1.4c.7.5 1.6.7 2.4 1.2a3.6 3.6 0 0 1 1.6 1.5 3.3 3.3 0 0 1-.7 3.8 5.1 5.1 0 0 1-3.8 1.2 8 8 0 0 1-2.7-.7V18a5.8 5.8 0 0 0 2.4 1 3.1 3.1 0 0 0 1.9-.1 1 1 0 0 0 .3-1.6 3.2 3.2 0 0 0-1.2-.7 11.2 11.2 0 0 1-2.3-1.2 2.8 2.8 0 0 1-1-1.6 3.5 3.5 0 0 1 .4-2.7 4 4 0 0 1 2.7-1.7Zm-29.2.1a7 7 0 0 1 4 0 3.1 3.1 0 0 1 .7.4v2.6a4.1 4.1 0 0 0-3-1 3.1 3.1 0 0 0-2.2 1.3 4.5 4.5 0 0 0-.7 3.1 3.4 3.4 0 0 0 1 2.3 3.3 3.3 0 0 0 2.5.7 5 5 0 0 0 2.4-1v2.5a6.3 6.3 0 0 1-3.6.7 5.3 5.3 0 0 1-3.4-1.4 5.7 5.7 0 0 1-1.6-3.8 7 7 0 0 1 1-4.3 5.3 5.3 0 0 1 3-2Zm39.2-.2a6.7 6.7 0 0 1 4 .6 4.8 4.8 0 0 1 2.2 2.6 7.4 7.4 0 0 1 .4 2.7 6.3 6.3 0 0 1-1.2 3.9 5.1 5.1 0 0 1-3.3 2 7 7 0 0 1-3.7-.4 5 5 0 0 1-2.7-2.7 7.7 7.7 0 0 1-.4-4 5.6 5.6 0 0 1 1.8-3.4 5.4 5.4 0 0 1 2.9-1.3ZM79 9.3a6.8 6.8 0 0 1 3.8.5 4.7 4.7 0 0 1 2.3 2.4 7.6 7.6 0 0 1 .5 3.6 6.1 6.1 0 0 1-1.1 3.3 5 5 0 0 1-3 1.9 7.4 7.4 0 0 1-3.2 0 5 5 0 0 1-3-2 6.7 6.7 0 0 1-1-4.3 6.2 6.2 0 0 1 1.2-3.5A5.2 5.2 0 0 1 79 9.3Zm-7.4.6a2.8 2.8 0 0 1 2.4-.2v2.6a2.7 2.7 0 0 0-1.7-.4 2.2 2.2 0 0 0-1.6 1.4 5.1 5.1 0 0 0-.4 2.2V21H68V9.7h2.5v2a3.4 3.4 0 0 1 1.4-1.8ZM111 4.6a4.7 4.7 0 0 1 3.8-.5v2.3a2.5 2.5 0 0 0-2-.2 1.6 1.6 0 0 0-.8 1.3 17.1 17.1 0 0 0 0 2h3.8V6.9l2.6-.8v3.4h2.6v2.1h-2.6v5.8a1.4 1.4 0 0 0 .6 1.1 2 2 0 0 0 2-.2v2.2a5 5 0 0 1-2.4.4 2.9 2.9 0 0 1-2-1 4 4 0 0 1-.8-2.5v-5.8h-3.9v9h-2.6v-9h-1.8V9.5h1.8a11.6 11.6 0 0 1 .2-2.9 3.6 3.6 0 0 1 1.5-2ZM46.5 5h3.7v15.6h-2.6v-12a2 2 0 0 0-.2.2l-4.6 11.7H41L36.2 9l-.1-.2v12h-2.5V5h3.8l3.6 9.2 1 2.3L46.4 5Zm8.2 4.4h.8v11.2H53V9.5h2.7Zm46.6 2h-.2a2.7 2.7 0 0 0-2 1 4 4 0 0 0-.7 2.2 5.5 5.5 0 0 0 .3 2.5 2.7 2.7 0 0 0 1.4 1.5 3.4 3.4 0 0 0 1.9.2 2.5 2.5 0 0 0 1.5-.9 3.6 3.6 0 0 0 .7-1.6 7 7 0 0 0 0-2.5 3.1 3.1 0 0 0-1-1.8 2.8 2.8 0 0 0-2.1-.6ZM53.8 4.9a1.7 1.7 0 0 1 1.6.5 1.5 1.5 0 0 1 .2 1.8 1.8 1.8 0 0 1-1.9.8 1.6 1.6 0 0 1-1.3-1.6A1.6 1.6 0 0 1 53.8 5Zm-28 8.7V26H13.5V13.6h12.3ZM0 13.6h12.3V26H0ZM25.8 0v12.4H13.5V0h12.3ZM12.3 0v12.4H0V0h12.3Z" opacity="0.7"></path></svg>
+
+						 <!-- FOX -->
+						 <svg class="u-dib u-vam u-m2" xmlns="http://www.w3.org/2000/svg" width="61.911" height="26.874" viewBox="0 0 61.9 26.9" aria-labelledby="titleFox"><title id="titleFox">Fox</title>
+						 <path fill="#fff" fill-rule="evenodd" d="M31.2 18.8V8.2A2.3 2.3 0 0 0 29 5.8a2.3 2.3 0 0 0-2.1 2.3v10.7A2.2 2.2 0 0 0 29 21a2 2 0 0 0 2.2-2.2Zm30.7 8-8-13.9L61.2.1h-8l-3.3 5.7L46.6.1h-8.3L45.7 13 38 26.8h8l3.8-6.7 4 6.7H62ZM0 26.8V0h16l.5 7.4h-9v3.5h7.3v7.3H7.5v8.7H0Zm16.3-13.3a12.7 12.7 0 1 1 25.4 0 12.7 12.7 0 1 1-25.4 0Z" data-name="Path 203271" opacity="0.7"></path></svg>
+						 </div>
+						 <div class="u-dib Logos-row Logos-row-2">
+						 <!-- SAMSUNG -->
+						 <svg class="u-dib u-vam u-m2" xmlns="http://www.w3.org/2000/svg" width="144.297" height="21.157" viewBox="0 0 144.3 21.2" aria-labelledby="titleSamsung"><title id="titleSamsung">Samsung</title>
+						 <g opacity="0.7"><path fill="#fff" fill-rule="evenodd" d="M79.1 9.8A18.6 18.6 0 0 0 77 8.6a18 18 0 0 1-3.3-1.8 1.9 1.9 0 0 1-.4-2.2 1.3 1.3 0 0 1 1.4-.7s1.4 0 1.4 1.3v1.6h5.2V4.4s.4-4-6.1-4.2c0 0-5.1-.4-6.6 2.4 0 0-.6.6-.6 2.7V7a5.1 5.1 0 0 0 .9 2.9 6.7 6.7 0 0 0 1.8 1.6s2.5 1.4 4 2.1c0 0 1.6 1 1.4 2.3a1.5 1.5 0 0 1-1.6 1.4 1.4 1.4 0 0 1-1.4-1.4V14h-5.5v2.4s-.1 4.7 7 4.7c0 0 6.7 0 7-4.8v-2a5.2 5.2 0 0 0-2.4-4.6M22.3.8l-3.4 19.7h5.5l2-15.3h.5l2 15.3h5.5L31 .8Z" data-name="Path 203272"></path><g data-name="Group 180886"><path fill="#fff" fill-rule="evenodd" d="M11.6 9.8a18.4 18.4 0 0 0-2.3-1.2 17.9 17.9 0 0 1-3.2-1.8 1.9 1.9 0 0 1-.4-2.2A1.3 1.3 0 0 1 7 4s1.5 0 1.5 1.3v1.6h5.1V4.4s.4-4-6-4.2a11.6 11.6 0 0 0-1.2 0S2.4.4 1 2.5s-.6.7-.6 2.8V7a5.1 5.1 0 0 0 .9 2.9A6.7 6.7 0 0 0 3 11.4s2.6 1.4 4.2 2.1c0 0 1.5 1 1.3 2.3a1.5 1.5 0 0 1-1.6 1.4 1.4 1.4 0 0 1-1.4-1.4V14H0v2.4s-.2 4.7 7 4.7c0 0 6.7 0 7-4.8v-2a5.2 5.2 0 0 0-2.4-4.6" data-name="Path 203273"></path></g>
+						 <path fill="#fff" fill-rule="evenodd" d="M52.7.7 51 11.6h-.4L48.9.8h-8.6l-.4 19.7h5L45 5.7h.4l2.7 14.8h5.4l2.7-14.8h.3l.2 14.8h5L61.3.7Zm85 8.9v2.9h1.4v3a1.4 1.4 0 1 1-2.9.2V4.9c0-1.1 1.4-1.2 1.4-1.2a1.3 1.3 0 0 1 1.4 1.4v1.6h5.2c.1-3.2-.5-4-.5-4-1.3-2.9-6.1-2.7-6.1-2.7-7.5 0-6.7 5.7-6.7 5.7v10.4c.2 5.4 7.5 4.9 7.7 4.9 3.2-.4 4.2-1.4 4.2-1.4A3.2 3.2 0 0 0 144 18a9.5 9.5 0 0 0 .3-2.3V9.6Zm-41.5 6s.1 1.6-1.4 1.6a1.5 1.5 0 0 1-1.6-1.6V.7h-5.6v14.8S87 21 95 21c0 0 6.8 0 6.8-5.4V.7h-5.5Z" data-name="Path 203274"></path><path fill="#fff" fill-rule="evenodd" d="M120.5 12.8h-.2L115 .8h-6.3v19.7h5.1l-.3-12h.3l5.4 12h6.1V.7h-5.2Z" data-name="Path 203275"></path></g>
+						 </svg>
+
+						 <!-- IBM -->
+						 <svg class="u-dib u-vam u-m2" xmlns="http://www.w3.org/2000/svg" width="72" height="29" viewBox="0 0 72 29" aria-labelledby="titleIBM"><title id="titleIBM">IBM</title>
+						 <path fill="#fff" fill-rule="evenodd" d="M72 27v2H62v-2Zm-36 0a7.7 7.7 0 0 1-5.2 2h-15v-2H36Zm13.8 0v2H40v-2Zm-36 0v2H0v-2h14Zm43 0-.8 2-.7-2Zm1.3-4-.7 2.1h-3l-.7-2Zm-8.3 0v2.1H40v-2Zm22 0v2.1H62v-2Zm-33.7 0a4.4 4.4 0 0 1-.8 2.1H15.8v-2ZM0 23h14v2.1H0Zm59.6-3.7-.8 2h-5.6l-.8-2Zm-21.5 0a6 6 0 0 1 .4 2H32v-2Zm-12.1 0v2h-6.1v-2Zm-16 0v2H4v-2Zm58 0v2h-5.9v-2Zm-18.1 0v2h-6v-2Zm11-3.9-.7 2h-8.4l-.7-2h9.8Zm7.1 0v2h-5.9v-2H68Zm-18.1 0v2h-6v-2Zm-14.5 0a10.1 10.1 0 0 1 1.8 2H20v-2h15.5Zm-25.5 0v2H4v-2Zm27.2-3.9a7.8 7.8 0 0 1-1.7 2.1H20v-2h17Zm30.9 0v2.1h-6V12l-.5 1.6H50.4L50 12v1.6h-6v-2h11.3l.7 1.9.7-2H68Zm-58 0v2.1H3.8v-2h6Zm48-3.8h10v2.1H57.2l.8-2Zm-4.1 0 .7 2.1H44v-2h9.9Zm-15.6 0a6.7 6.7 0 0 1-.3 2.1h-6.1v-2h6.4Zm-28.4 0v2.1H4v-2h6Zm16 0v2.1h-6v-2h6ZM52.5 4l.8 2H40V4h12.5ZM72 4v2H58.6l.7-2ZM37.5 4a5.3 5.3 0 0 1 .6 2H15.8V4h21.8ZM14 3.9v2H0V4h14ZM72 0v2H60l.7-2ZM15.8 0h15.4A8 8 0 0 1 36 2H15.9Zm35.3 0 .8 2H40V0h11.1Zm-37 0v2H0V0h14Z" data-name="Path 203271" opacity="0.7"></path></svg>
+						 </div>
+						 <div class="u-dib Logos-row Logos-row-3">
+						 <!-- WBG -->
+						 <svg class="u-dib u-vam u-m2 Logos-widest" xmlns="http://www.w3.org/2000/svg" width="173.505" height="33.977" viewBox="0 0 173.5 34" aria-labelledby="titleWBG"><title id="titleWBG">World Bank Group</title>
+						 <defs><clipPath id="a"><path d="M21.7 28.9a21.7 21.7 0 0 0 6.2-1 7.8 7.8 0 0 0 1.4-.5 7.9 7.9 0 0 1-2.3 3.1 14.5 14.5 0 0 1-6.8 2.8 32.6 32.6 0 0 0 1.5-4.4M11.1 32l-.1-.1c-.9-.4-1.2-2.4-.8-5.4a26.3 26.3 0 0 0 5.4 1.8 31 31 0 0 0 4.4.6c-.7 3.1-1.6 4.6-2.2 4.6h-.1a15.5 15.5 0 0 1-6.6-1.5M3 22.3l-.3-1.5A20 20 0 0 0 4.6 23a16.5 16.5 0 0 0 4.1 2.8 14.2 14.2 0 0 0-.2 4.6A15 15 0 0 1 3 22.3m19.6-4.1v-1.9a12.8 12.8 0 0 0 5.3-1.5 18.6 18.6 0 0 1 2.1 8.3 15 15 0 0 1-.2 2.2 8.6 8.6 0 0 1-2.4 1.1 17 17 0 0 1-5.4.9 54.2 54.2 0 0 0 .6-9.1M16 26.8a25.5 25.5 0 0 1-5.5-1.9 38.6 38.6 0 0 1 3.2-8.8l.7-1.5a22.9 22.9 0 0 0 3.7 1.2l3 .4V18a56.2 56.2 0 0 1-.7 9.2 20.3 20.3 0 0 1-4.3-.6M5.7 21.8A8.9 8.9 0 0 1 3 17.9a10.8 10.8 0 0 1 2.1-4.3A15.8 15.8 0 0 1 8.8 10a12.4 12.4 0 0 0 1.8 2.2A10.8 10.8 0 0 0 13 14a10 10 0 0 0-.7 1.5 38.6 38.6 0 0 0-3.2 8.8l-3.4-2.5M21.6 7a21.1 21.1 0 0 1 4.8 5.1 7.5 7.5 0 0 1 .7 1.2 10.6 10.6 0 0 1-4.6 1.3 39.4 39.4 0 0 0-.9-7.6m-3.2 7.3a17 17 0 0 1-3.2-1 37 37 0 0 1 4.7-6.5 41.8 41.8 0 0 1 1.1 7.9 23.4 23.4 0 0 1-2.6-.4M11.7 11a7 7 0 0 1-1.5-1.9A21.3 21.3 0 0 1 15.1 7l3.1-.7a40 40 0 0 0-4.5 6.3 8 8 0 0 1-2.1-1.5M8.3 6v.3a4.1 4.1 0 0 0 0 2.2 19.1 19.1 0 0 0-4.4 4.1 13 13 0 0 0-1 1.5A16 16 0 0 1 8.3 6m1.5.6a3.2 3.2 0 0 1 1.5-2.1 10.4 10.4 0 0 1 6.3.4 24.6 24.6 0 0 0-2.9.7 26.5 26.5 0 0 0-4.9 2 1.7 1.7 0 0 1 0-1m12.8-2.1a5 5 0 0 1 1.5-.7A10 10 0 0 1 26.4 5a16.5 16.5 0 0 0-3.8-.5m-2.7-1.7 2 .3-1.3.9a7.5 7.5 0 0 0-.7-1.2m-1.7.6a8.3 8.3 0 0 0-2.1-.6 9.7 9.7 0 0 1 1.7-.1c.3 0 .6.3 1 1l-.6-.3M.8 18.1a15.3 15.3 0 0 0 .7 4.7l.1.3a17 17 0 0 0 21.3 11.2 15.7 15.7 0 0 0 4.5-2.2h.1l.5-.3a16.4 16.4 0 0 0 6.4-9.6l.1-.6v-.1a19.8 19.8 0 0 0 .3-3.5 16.5 16.5 0 0 0-1.3-6.6.7.7 0 0 0-1-.4.7.7 0 0 0-.4 1 15.3 15.3 0 0 1 1.2 6 23.3 23.3 0 0 1-.4 3.7 7.2 7.2 0 0 1-1.2 2.1V23a21.8 21.8 0 0 0-2.4-9.3 5.9 5.9 0 0 0 2.1-3.5.7.7 0 0 0-.8-.7.8.8 0 0 0-.7.5 4.5 4.5 0 0 1-1.4 2.4l-.7-1.1A23.8 23.8 0 0 0 23 6.1a16 16 0 0 1 6.4 1.7.8.8 0 0 0 .9 0 .8.8 0 0 0 .1-1.1c-2.5-3.6-7-5.6-12.5-5.6a17 17 0 0 0-17.1 17" data-name="Path 203291"></path></clipPath>
+						 <clipPath id="b"><path d="M.8 1.1h34v34H.8z" data-name="Rectangle 77015"></path></clipPath>
+						 </defs>
+						 <g opacity="0.7"><g data-name="Group 180895"><path fill="#fff" d="M20.9 27.8a21.7 21.7 0 0 0 6.2-1 7.8 7.8 0 0 0 1.4-.5 7.9 7.9 0 0 1-2.3 3.1 14.5 14.5 0 0 1-6.8 2.8 32.6 32.6 0 0 0 1.5-4.4m-10.6 3.1-.1-.1c-.9-.4-1.2-2.4-.8-5.4a26.3 26.3 0 0 0 5.4 1.8 31 31 0 0 0 4.4.6c-.7 3.1-1.6 4.6-2.2 4.6h-.1a15.5 15.5 0 0 1-6.6-1.5m-8.1-9.7-.3-1.5a20 20 0 0 0 1.9 2.2 16.5 16.5 0 0 0 4.1 2.8 14.2 14.2 0 0 0-.2 4.6 15 15 0 0 1-5.5-8.1m19.6-4.1v-1.9a12.8 12.8 0 0 0 5.3-1.5 18.6 18.6 0 0 1 2.1 8.3 15 15 0 0 1-.2 2.2 8.6 8.6 0 0 1-2.4 1.1 17 17 0 0 1-5.4.9 54.2 54.2 0 0 0 .6-9.1m-6.6 8.6a25.5 25.5 0 0 1-5.5-1.9 38.6 38.6 0 0 1 3.2-8.8l.7-1.5a22.9 22.9 0 0 0 3.7 1.2l3 .4v1.8a56.2 56.2 0 0 1-.7 9.2 20.3 20.3 0 0 1-4.3-.6M4.9 20.7a8.9 8.9 0 0 1-2.7-3.9 10.8 10.8 0 0 1 2.1-4.3A15.8 15.8 0 0 1 8 8.9a12.4 12.4 0 0 0 1.8 2.2 10.8 10.8 0 0 0 2.4 1.8 10 10 0 0 0-.7 1.5 38.6 38.6 0 0 0-3.2 8.8l-3.4-2.5M20.8 5.9a21.1 21.1 0 0 1 4.8 5.1 7.5 7.5 0 0 1 .7 1.2 10.6 10.6 0 0 1-4.6 1.3 39.4 39.4 0 0 0-.9-7.6m-3.2 7.3a17 17 0 0 1-3.2-1 37 37 0 0 1 4.7-6.5 41.8 41.8 0 0 1 1.1 7.9 23.4 23.4 0 0 1-2.6-.4m-6.7-3.3A7 7 0 0 1 9.4 8a21.3 21.3 0 0 1 4.9-2.1l3.1-.7a40 40 0 0 0-4.5 6.3 8 8 0 0 1-2.1-1.5M7.5 4.9v.3a4.1 4.1 0 0 0 0 2.2 19.1 19.1 0 0 0-4.4 4.1 13 13 0 0 0-1 1.5 16 16 0 0 1 5.4-8.1m1.5.6a3.2 3.2 0 0 1 1.5-2.1 10.4 10.4 0 0 1 6.3.4 24.6 24.6 0 0 0-2.9.7 26.5 26.5 0 0 0-4.9 2 1.7 1.7 0 0 1 0-1m12.8-2.1a5 5 0 0 1 1.5-.7 10 10 0 0 1 2.3 1.2 16.5 16.5 0 0 0-3.8-.5m-2.7-1.7 2 .3-1.3.9a7.5 7.5 0 0 0-.7-1.2m-1.7.6a8.3 8.3 0 0 0-2.1-.6 9.7 9.7 0 0 1 1.7-.1c.3 0 .6.3 1 1l-.6-.3M0 17a15.3 15.3 0 0 0 .7 4.7l.1.3a17 17 0 0 0 21.3 11.2 15.7 15.7 0 0 0 4.5-2.2h.1l.5-.3a16.4 16.4 0 0 0 6.4-9.6l.1-.6v-.1a19.8 19.8 0 0 0 .3-3.5 16.5 16.5 0 0 0-1.3-6.6.7.7 0 0 0-1-.4.7.7 0 0 0-.4 1 15.3 15.3 0 0 1 1.2 6 23.3 23.3 0 0 1-.4 3.7 7.2 7.2 0 0 1-1.2 2.1v-.8a21.8 21.8 0 0 0-2.4-9.3 5.9 5.9 0 0 0 2.1-3.5.7.7 0 0 0-.8-.7.8.8 0 0 0-.7.5 4.5 4.5 0 0 1-1.4 2.4l-.7-1.1A23.8 23.8 0 0 0 22.2 5a16 16 0 0 1 6.4 1.7.8.8 0 0 0 .9 0 .8.8 0 0 0 .1-1.1C27.1 2 22.6 0 17.1 0A17 17 0 0 0 0 17" data-name="Path 203289"></path><g clip-path="url(#a)" data-name="Group 180894" transform="translate(-.8 -1.1)"><g data-name="Group 180893"><path fill="#fff" d="M.8 1.1h34v34H.8z" data-name="Rectangle 77014"></path><g clip-path="url(#b)" data-name="Group 180892"><path fill="#fff" d="M18.1 3.2v.1h.3v-.1h-.2v-.1h-.1v-.2h-.3v-.1h-1.2v.1h.6V3h.5v.1m2.9.6v.1h.3v-.1h.1v-.2h.3v-.1h.1v-.3h-.8v-.2H20V3h.1v.3h.1v.1h.1Zm4.8 1v.1h.4v-.1h-.3v-.1h-.1v-.2H25v-.1h-.3v-.2h-.4v-.2h-.8V4h-.3v.1h-.1v.1h.1v.1h1.1v.1ZM9.9 7.3v.1h.1v-.1h.3v-.2h.1V7h.3v-.1h.3v-.2h.3v-.1h.3v-.2h.4v-.2h.3v-.1h.5v-.2h.4v-.1h.4v-.2h.9v-.2h.6v-.1h.8v-.2h.6v-.2h.6v-.2h-.5v-.1H16v-.2h-.6v-.1h-1v-.2h-1.6v.1H12v.1h-.8v.1h-.1v.1H11v.1h-.1V5h-.1v.1h-.1v.4h-.1v.1h-.1V6H10v.4h-.1Zm3.7 5v.1h.1v-.1h.1v-.1h.1v-.3h.1v-.3h.2v-.1h.1v-.3h.1v-.1h.1v-.3h.1v-.2h.1v-.3h.1v-.5h.1v-.1h.1v-.3h.2v-.2h.1v-.3h.7v-.1h.1v-.2h.1v-.3h.1v-.1h.1V8h.1v-.1h.1v-.3h.4v-.2h.1v-.1h.1v-.2h.1v-.3h.3v-.1h.1v-.2h.1v-.1h-.1v.2h-.6v.1h-.8v.1H16V7h-.8v.1h-.4v.1h-.4v.1H14v.1h-.4v.1h-.3V8h-.5v.1h-.3v.1h-.3v.1h-.3v.1h-.3v.1h-.3v.1H11V9h-.3v.1h-.3v.2h.1v.3h.1v.1h.1v.3h.1v.1h.1v.1h.1v.1h.1v.2h.2v.1h.1v.1h.1v.1h.5v.1h.1v.1h.1v.1h.3v.1h.1v.1h.2v.7h.3v.1h.1v.1h.4ZM3.4 13v.1h.1v-.3h.1v-.1h.1v-.3H4v-.1h.1v-.1h.2V12h.1v-.2h.1v-.1h.2v-.1H5v-.1h.1v-.3h.1v-.1h.1V11h.1v-.1h.1v-.2h.1v-.1H6v-.1h.2V10h.3v-.1h.1v-.2h.1v-.1h.1v-.2h.3v-.1h.1v-.2h.2v-.2h.1v-.1H8v-.2h.1v-.1h.1v-.3h-.1V6.4H8v.2h-.2v.1h-.1v.1h-.2V7h-.2v.1h-.1v.1H7v.1h-.1v.1h-.2v.1h-.1V8h-.2v.1h-.1v.1h-.1v.1h-.3v.4h-.2V9h-.1v.3h-.2v.1h-.1v.1h-.2v.3H5v.2h-.2v.3h-.2v.3h-.2v.6h-.2v.1h-.1v.3h-.2v.4h-.1v.4h-.2v.4h-.1Zm19.3 1.4v.1h.4v-.1h.9v-.1h.9V14h.5v-.1h.3v-.1h.4v-.1h.3v-.1h.3v-.1h.3v-.1h-.1V13h-.1v-.3h-.2v-.1h-.1v-.3h-.1v-.1h-.1V12h-.1v-.3h-.1v-.1H26v-.1h-.1v-.1h-.1v-.3h-.1V11h-.1v-.1h-.1v-.2h-.1v-.3h-.1V10h-.1v-.1h-.1v-.2H25v-.3h-.3v-.1h-.1v-.2h-.1v-.2h-.1v-.1h-.1v-.2h-.1v-.1H23v-.1h-.1v-.2h-.3v-.1h-.2v-.2h-.1v-.2h-.1v-.1h-.1v-.2H22V8h.1v.9h.1v.8h.1v.9h.1v1.7h.2V14h.1Zm-2.7 0v.1h.9V13h-.1v-1.5h-.1v-1.2h-.1v-.9h-.1v-.9h-.1v-.6H20v-.8h-.3v.1h-.1v.3h-.1v.1h-.1v.2h-.1V8H19v.3h-.1v.2h-.1v.1h-.1v.1h-.2V9h-.1v.3H18v.1h-.1v.1h-.1v.1h-.1v.4h-.1v.1h-.1v.3h-.1v.2H17v.3h-.1v.3h-.1v.1h-.1v.3h-.3v.1h-.1v.3H16v.1h-.1v.3h-.1v.1h-.2v.5h-.1v.3h.3v.1h.4v.1h.6v.1h.5v.1h.6v.1h.4v.1h.6v.1ZM8.8 23.8v.2h.3v-.4h.1V23h.1v-.5h.1V22h.1v-.4h.1V21h.4v-.4h.1v-.5h.1v-.4h.1v-.3h.1V19h.1v-.3h.1v-.3h.1V18h.1v-.4h.1v-.3h.2v-.4h.1v-.3h.1v-.3h.7v-.4h.1v-.3h.1v-.3h.1V15h.1v-.3h.1v-.3h.2v-.3h-.1V14h-.3v-.1h-.1v-.1h-.1v-.1h-.3v-.1h-.1V13h-.3v-.1h-.1v-.1h-.1v-.1h-.3v-.1h-.1v-.1h-.1v-.1h-.1V12h-.1v-.2H10v-.1h-.1v-.1h-.2v-.1h-.1v-.1h-.2v-.3h-.1V11h-.2v-.3H9v-.1h-.3v.1h-.3v.2h-.2v.1h-.1v.1h-.2v.1h-.1v.1h-.3v.1h-.2v.2h-.1v.1H7v.1h-.1v.2h-.2v.1h-.1v.1h-.2v.1h-.1v.1h-.1v.1h-.3v.6h-.2v.2h-.1v.1h-.2v.1h-.1v.3h-.2v.1H5v.3h-.2v.1h-.2v.3h-.2v.4h-.2v.3h-.1v.1h-.2v.5h-.1v.4h-.2v.3h-.1v.4h-.3v.5h-.1v.5h.1v.3h.2v.3h.1v.4h.1v.3h.1v.3H4v.3h.1v.1h.2v.1h.1v.2h.1v.1h.2v.1H5v.3h.1v.2h.1v.1h.1v.1h.1v.1h.1v.2h.1v.1H6v.1h.2v.1h.1v.1h.3v.1h.1v.1h.1v.1h.1v.1h.3v.7h.2v.1h.1v.1H8v.1h.3v.1h.1v.1h.3v.1ZM22.1 27v.1h1.7V27H25v-.2h.6v-.1h.6v-.1h.6v-.1h.6v-.1h.3v-.1h.5V26h.3v-.1h.3v-.1h.3v-.2h.3v-.1h.4v-.4h.1V21h-.1v-.7h-.1v-.8h-.1v-.8h-.2v-.4h-.1v-.4h-.1v-.5h-.1V17H29v-.4h-.1v-.3h-.1V16h-.1v-.3H28v-.4h-.2V15h-.5v.1H27v.1h-.3v.1h-.5v.1h-.3v.1h-.4v.1h-.7v.4h-.9v.1H23v.1h-.3v5.9h-.1v1.8h-.2v1.2h-.1v1.4h-.1Zm-2.9 0v.1h1.1v-.3h.1v-1h.1v-1.1h.2v-1.5h.1v-2.4h.2v-4.5h-.6v-.1h-1.2V16H18v-.1h-.6v-.1H17v-.1h-.7v-.1h-.4v-.1h-.5v-.1h-.3V15h-.4v-.1h-.3v.3h-.1v.3h-.1v.3h-.1v.2H14v.3h-.1v.4h-.1v.3h-.2v.3h-.1v.3H13v.3h-.1v.4h-.1v.3h-.1v.4h-.1v.4h-.1v.4h-.1v.3H12v.4h-.2v.3h-.1v.4h-.1v.8h-.1v.4h-.1v.5h-.1v.5h-.1v.6h-.1v.6H11v.3h.3v.1h.3v.1h.5v.1H12v.1h.4v.2h.3v.1h.5v.4h.4v.1h.6v.1h.6v.1h.4v.1h.6v.1h1v.1h1.1v.4ZM8.4 30v.1h.1V30h-.1v-2.4h.1v-1.2h.1v-.6h-.2v-.1h-.2v-.2h-.3v-.1h-.3v-.1h-.1V25h-.4v-.1H7v-.1h-.3v-.1h-.3v-.1h-.1v-.1h-.2v-.2h-.2V24h-.3v-.1h-.1v-.1h-.2v-.1h-.1v-.1h-.3v-.1h-.1v-.1h-.2V23h-.2v-.3h-.2v-.1h-.1v-.1h-.2v-.1h-.1v-.1h-.2v-.1h-.1v-.1h-.3v-.3h-.1v-.1h-.2v.8H3v.4h.1v.1h.2v.4h.1v.3h.1v.4h.1v.5h.1v.1h.1v.3h.3v.3h.1v.3h.1v.1h.2v.3H5v.3h.1v.3h.1v.1h.1v.3h.1v.3h.1v.1h.1v.1H6v.1h.2v.1h.1v.3h.1v.1h.1v.2h.1v.1h.1v.1h.1v.1h.1v.1H7v.1h.2v.1h.1v.1h.1v.1h.3v.2h.1v.7Zm12 3v.1h.4V33h.8v-.1h.6v-.1h.5v-.1h.3v-.2h.4v-.1h.5v-.1h.3v-.1h.3v-.1h.3V32h.3v-.1h.3v-.1h.1v-.1h.3V31h.2v-.1h.3v-.1h.3v-.1h.1v-.1h.1v-.1h.2v-.1h.1V30h.1v-.1h.1v-.2h.1v-.1h.1v-.1h.1v-.1h.2v-.1h.1V29h.1v-.1h.1v-.3h.1V28h.1v-.3h.1v-.1h-.1v.1h-.4v.2h.1v.1h-.6v.1h-.7v.1h-.6v.2h-.6v.1h-.7v.1H23v.1h-1.2v.1h-.1v.6h-.1v.6h-.1v.4h-.1v.6H21v.4h-.1v.3h-.1v.3h-.1v.5h-.1Zm-3 .3v.1h.4v-.1h.3v-.1h.1V33h.2v-.3h.1v-.3h.1v-.1h.1v-.4h.1v-.3h.2V31h.1v-.3h.1v-.6h.1v-.6h.2v-.4h.5V29h-.5v-.1h-1.2v-.1h-1v-.1h-1.2v-.2h-.8v-.1h-.6V28H14v-.1h-.4v-.1H13v-.1h-.5v-.1h-.4v-.1h-.3v-.1h-.4V27H11v-.1h-.3v-.1h-.3v.5h-.1v3.2h.1v.4h.1v.5h.1v.1h.1v.1h.1v.3h.3v.1h.3v.1h.6v.1h.4v.1h.5v.2h.3v.1h.4v.1h.4v.3h.7v.1H16v.1h1.4Zm-1.2 1.8V35h-1.5v-.1H14v-.1h-.6v-.1h-.6v-.1h-.6v-.1H12V34h-.3v-.1h-.8v-.1h-.3v-.1h-.4v-.1h-.3v-.1h-.3v-.1h-.2V33h-.3v-.1H9v-.1h-.3v-.3h-.3v-.1h-.2v-.1h-.3v-.1h-.1v-.1h-.3V32h-.2v-.1h-.1v-.1H7v-.1h-.1V31h-.2v-.1h-.1v-.1h-.3v-.1h-.1v-.1h-.3v-.2h-.2V30h-.1v-.1h-.2v-.2h-.1v-.1h-.2v-.3H5v-.1h-.2v-.1h-.2V29h-.2v-.4h-.2v-.1h-.1V28h-.2v-.1h-.1v-.3h-.2v-.3h-.1v-.1h-.3v-.3h-.1v-.3h-.2v-.1h-.2v-.3h-.1v-.3h-.2v-.3h-.1v-.3h-.2v-.4H2v-.3h-.2V24h-.1v-.3h-.1v-.4h-.2v-.6h-.1V22h-.2v-.8H1v-.7H.8v-2H.7v-1.1h.1v-1.8H1v-.9h.1v-.8h.1v-.6h.1V13h.1v-.4h.1v-.4h.2v-.5H2v-.3h.1v-.3h.1v-.3h.1v-.3h.1v-.3h.1v-.4h.1v-.3H3v-.3h.1v-.1h.2v-.3h.1v-.3h.1v-.1h.1v-.2h.1v-.3h.1v-.2h.3v-.1h.1v-.3h.1v-.2h.2V7H5v-.1h.1v-.2h.1v-.1h.1v-.2h.1v-.2h.1v-.3H6v-.1h.2v-.2h.2v-.2h.1v-.1h.1v-.2h.1v-.2h.1v-.2h.3v-.1h.2v-.2h.1v-.1H8v-.2h.1v-.2h.1v-.1h.3v-.2h.3v-.1H9v-.1h.3v-.2h.3v-.1h.3v-.2h.3v-.1h.3v-.2h.3v-.1h.3v-.2h.3v-.1h.4V2h.4v-.1h.4v-.2h.5v-.1h.6v-.2h.8v-.1h.9v-.2h1.8V.9h1.2V1h2v.1h1.1v.1h.8v.1h.6v.1h.6v.1h.5V2h.4v.1h.3v.2h.4v.1h.3v.1h.3v.1h.3v.1h.3V3h.3v.1h.3v.1h.1v.1h.1v.2h.3v.1h.1v.1h.3v.1h.2v.1h.1V4h.1v.1h.1v.1h.1v.1h.3V5h.1v.1h.1v.1h.2v.3h.1v.1h.1v.1h.1V6h.6v.1h.1v.3h.1v.1h.1v.9h-.1v.1h-.1v.2h-.3V8h-.3v-.2h-.6v-.1h-.3v-.1h-.3v-.2H28v-.1h-.3v-.2h-.4V7h-.4v-.1h-.5v-.2h-.6v-.1h-.7v-.2h-.9v-.2h-.9v.1h.1v.2h.1v.1h.2v.1h.2V7h.3v.1h.1v.1h.1v.1h.1v.1h.1v.1h.1V8h.1v.1h.1v.1h.2v.1h.1v.1h.1v.1h.1v.1h.6v.3h.1v.2h.1v.1h.1v.1h.1v.3h.1v.4h.1v.1h.4v.1h.1v.3h.1v.1h.1v.1h.1v.1h.1v.3h.1v.1h.2v.3h.1v.5h.1v.3h.1V12h.1v-.2h.1v-.1h.1v-.3h.1v-.1h.1V11h.2v-.5h.1V10h.1v-.3h.1v-.3h.3v-.1h.8v.1h.3v.1h.1v.1h.1v.9h-.1v.4h-.1v.3h.5v.4h-.1v.4h-.2v.1h-.1v.1h-.1v.1h-.1v.1h-.1v.3H30v.2h-.3v.1h-.1v.1h-.1v.1h-.2v.1h.2v.3h.1v.3h.1v.3h.1v.4h.2v.3h.1v.3h.1v.5h.1v.4h.1v.4h.2v.5h.1v.4h.3v.6h.1v.9h.1v.8h.1v1.5h.1v1.5h.1v-.1h.1v-.1h.2v-.3h.1v-.3h.1v-.3h.1v-.3h.1v-.6h.8v-.9h.1V19h.1v-1.2h-.1v-1.5H33V15h-.1v-.5h-.1v-.6h-.1v-.4h-.1V13h-.1v-.4H32V12h-.1v-.3h.1v-.4h.2v-.1h.3v-.1h.6v.1h.3v.1h.2v.1h.1v.6h.1v.4h.2v.4h.1v.5h.1v.6h.1v.4h.1v.8h.1v1.7h.2v2.7h-.2V21h-.1v1h-.1v.4h-.1v.5h-.1v.5H34v.4h-.1v.5h-.1v.4h-.1v.3h-.2v.3h-.1v.3h-.1v.4h-.1v.3h-.1v.1H33v.3h-.1v.3h-.1v.3h-.1v.3H32v.1h-.1v.1h-.1v.3h-.1v.1h-.1v.2h-.1v.1h-.1v.3H31v.1h-.1v.1h-.2v.1h-.1v.3h-.1v.2h-.1v.4h-.1v.1H30v.1h-.3v.1h-.3v.1h-.2v.1h-.1v.1H29v.4h-.1v.2h-.1v.1h-.1v.1h-.3v.1H28v.1h-.2v.1h-.1v.1h-.3v.1h-.1v.1H27v.2h-.3v.1h-.3v.1h-.1v.6H26v.1h-.3v.1h-.1v.1h-.3v.1h-.4v.3h-.4v.3H24v.1h-.5v.1h-.3v.1h-.4v.1h-.6v.1h-.7v.1h-.6v.1h-1.2v.1Z" data-name="Path 203290"></path></g>
+						 </g>
+						 </g>
+						 </g>
+						 <path fill="#fff" d="M169.6 12c2.5 0 3.9 1.2 3.9 3.4a3.1 3.1 0 0 1-3.1 3.3h-2.2v3.2h-2v-10m2.1 5.2h1.3c1.2 0 1.8-.5 1.8-1.6s-.7-1.7-1.9-1.7h-1.2Zm-6 .9c0 1.5-.6 2.2-1.7 2.2s-1.8-.7-1.8-2.2v-6h-2.1v5.9a4.2 4.2 0 0 0 1.1 3.2 3.7 3.7 0 0 0 2.8 1c1.7 0 3.8-.7 3.8-4.2v-5.8h-2.1ZM151 11.9c2.1 0 4.5 1.3 4.5 5.1s-2.3 5-4.5 5-4.5-1.3-4.5-5 2.3-5.1 4.5-5.1m0 8.3c.8 0 2.2-.4 2.2-3.2s-1.5-3.2-2.2-3.2c-1.5 0-2.3 1.1-2.3 3.2s.8 3.2 2.3 3.2m-6.7-1.3c.4.7.7 1.3 1.4 1.3h.5v1.7a3.4 3.4 0 0 1-1 .1c-1.7 0-2.2-1.1-2.6-2.2-.4-1-.7-1.5-1.6-1.5h-.9V22h-2.3V12h3.5c2.6 0 3.8 1 3.8 3.2a2.7 2.7 0 0 1-1.5 2.5 7.5 7.5 0 0 1 .7 1.2m-4.3-2.2h1.2c1.2 0 1.9-.6 1.9-1.5s-.6-1.5-1.7-1.5h-1.3v3Zm-7.8 1.6h2.2v.1a1.5 1.5 0 0 1-1.4 1.7h-.3c-1.5 0-2.3-1.2-2.3-3.2s.8-3.2 2.2-3.2a1.8 1.8 0 0 1 1.8 1.8v.1l2-.3v-.1a3.5 3.5 0 0 0-3.7-3.4h-.1c-2.8 0-4.5 1.8-4.5 5.1s1.7 5 4.5 5a3.5 3.5 0 0 0 3.8-3.1v-2.2h-4.2Zm-6.4-6.3h-2.6l-3.3 4.5V12h-2.1v10h2.1v-4.6l3.4 4.6h2.5l-3.8-5Zm-11.9 6.2-3.6-6.1h-2.1v10h2.1v-6l3.5 6h2.2v-10h-2.2Zm-9.9-6.1 3.6 9.9h-2.3l-.8-2.4h-3.3l-.9 2.4h-2.1l3.6-10h2.1Zm-1 2.6-1.1 3.1h2.2Zm-6.7 2a2.5 2.5 0 0 1 1.8 2.4c0 1.8-1.3 2.8-3.5 2.8h-4.3v-10h3.8c2.2 0 3.2.9 3.2 2.7 0 1.5-.6 2-1 2.1m-2.4-.6c.9 0 1.3-.4 1.3-1.2s-.5-1.1-1.5-1.1h-1.2v2.3h1.4Zm-1.5 4.1h1.7c1.1 0 1.6-.4 1.6-1.3s-.9-1.3-1.6-1.3h-1.6ZM81.6 12a4.7 4.7 0 0 1 5 4.3v.8c0 3.1-1.7 4.8-4.5 4.8h-3.4v-10h2.9Zm-.9 8.2H82c1.5 0 2.4-1.2 2.4-3.1 0-2.2-1-3.4-2.9-3.4h-.8ZM73.3 12h-2.1v10h6.4v-1.8h-4.3Zm-5 7c.3.7.7 1.3 1.4 1.3h.5v1.6a3.4 3.4 0 0 1-1 .1c-1.7 0-2.2-1.1-2.6-2.2-.4-1-.7-1.5-1.6-1.5h-.9V22H62V12h3.5c2.6 0 3.8 1 3.8 3.2a2.7 2.7 0 0 1-1.5 2.5l.5 1.3M64 16.7h1.2c1.2 0 1.9-.6 1.9-1.5s-.6-1.5-1.8-1.5H64Zm-7.8-4.8c2.2 0 4.5 1.3 4.5 5.1s-2.3 5-4.5 5-4.5-1.3-4.5-5 2.3-5.1 4.5-5.1m0 8.3c.8 0 2.3-.4 2.3-3.2s-1.5-3.2-2.3-3.2c-1.5 0-2.3 1.1-2.3 3.2s.8 3.2 2.3 3.2M49 12h2.4l-2.9 10h-2.3l-1.7-6.2-1.8 6.1h-2.4L37.4 12h2.5l1.7 7.3 2-7.3h1.8l1.9 7.3Z" data-name="Path 203292"></path></g>
+						 </svg>
+
+						 <!-- VOLVO -->
+						 <svg class="u-dib u-vam u-m2" xmlns="http://www.w3.org/2000/svg" width="115.8" height="15.7" viewBox="0 0 115.8 15.7" aria-labelledby="titleVolvo"><title id="titleVolvo">Volvo</title>
+						 <g fill="#fff" fill-rule="evenodd" opacity="0.7"><path d="M63.2 12.9H60V2.6h3.4V.3H49.6v2.3h3.5v10.3h-3.5v2.3h20.7V8.3H68c.1 2.7-1.8 4.6-4.8 4.6M28.8.3H18.5v2.3h3l-5 9.2-5.1-9.2H15V.3H0v2.3h3.4l7 12.6h8.1l6.9-12.6h3.4Z" data-name="Path 203285"></path><path d="M38.1 0c-6.9 0-10.6 3.5-10.6 7.8 0 4.4 3.6 7.9 10.7 7.9s10.6-3.5 10.6-7.9S45 0 38.1 0ZM38 13.3c-2.5 0-3.6-2.8-3.6-5.6 0-2.9 1.4-5.4 3.8-5.3 2.4 0 3.6 2.6 3.6 5.5 0 2.6-1.2 5.4-3.8 5.4Z" data-name="Path 203286"></path><path d="M105.1 0c-6.9 0-10.6 3.5-10.6 7.8 0 4.4 3.6 7.9 10.7 7.9s10.6-3.5 10.6-7.9C115.7 3.4 112 0 105.1 0Zm-.1 13.3c-2.5 0-3.6-2.8-3.6-5.6 0-2.9 1.4-5.4 3.8-5.3 2.4 0 3.6 2.6 3.6 5.5-.1 2.6-1.2 5.4-3.8 5.4Z" data-name="Path 203287"></path><path d="M95.3.3H85v2.3h3l-5 9.2-5.1-9.2h3.6V.3h-15v2.3h3.4l7 12.6H85l6.9-12.6h3.4Z" data-name="Path 203288"></path></g>
+						 </svg>
+						 </div>
+						 </div>
+										 
+										 
+										 
+					 
+					 
+					</div>
+				 </div>
+		  </section>
+		 
+		 
+		 
+		 <section class="Section Section--story js-fragment" data-sf-element="Section" data-placeholder-label="Section Banner">
+			  <div id="" class=" Section-bg u-tint-white" data-sf-element="Section Background" data-placeholder-label="Section Background">
+
+			<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/decorations/story-decor.svg?sfvrsn=c880557a_2" alt="story-decor" loading="lazy" class="u-m-dn"><svg class="u-dn u-m-db" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 1688" preserveAspectRatio="none" width="100%" height="100%"><defs><clipPath id="a"><path data-name="Rectangle 1262" transform="translate(88 2671)" fill="#fff" stroke="#707070" d="M0 0h320v448H0z"></path></clipPath></defs><g data-name="Group 2228"><g data-name="Mask Group 12" clip-path="url(#a)" transform="translate(-88 -2671)"><path d="M78.15 2690.163s5.342.25 7.97.748l200.677 37.986a42.851 42.851 0 0019.1-.722l54.621-14.688a42.851 42.851 0 0111.128-1.47h85.479v367.087H75.371z" fill="#fff"></path></g><path data-name="Rectangle 1263" fill="#fff" d="M0 400h320v1288H0z"></path></g></svg></div>
+			  <div id="" class=" container" data-sf-element="Section Content" data-placeholder-label="Section Content">
+
+			<h2 class="Section--story-h2">Your Success is Our Success</h2>
+
+
+
+			<div class="Story-tabs">
+			<div class="StoryTabs-item">
+			<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/the-challenge.png?sfvrsn=2ad64368_4" loading="lazy" title="The Challenge" aria-label="The Challenge" alt="The Challenge" class="u-dn u-l-db u-mb2">
+			
+			
+			<h3 class="story-modest-mb3-h3 ">
+			
+			
+			<button class="u-tint-white-story">Challenge</button>
+			<div class="StoryTabs-progress u-l-dn"></div></h3><p class="u-fw3 u-ff-sans u-mb0 track-slide-1">The demand for better user experiences continues to grow, while the time you have to develop a high quality, modern and engaging application continues to shrink. Stop sweating over UI and focus on the parts of the application where you can truly
+						make a difference.</p></div><div class="StoryTabs-item StoryTabs-item--2 u-l-mb4"><img aria-label="Partnership and Community" src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/partnership.png?sfvrsn=20c6cf2e_5" loading="lazy" title="Partnership and Community" alt="Partnership and Community" class="u-dn u-l-db u-mb2">
+						<h3 class="story-modest-mb3-h3 ">
+				
+				<button class="u-tint-white-story">Partnership and Community</button>
+				<div class="StoryTabs-progress StoryTabs-progress--half u-l-dn"></div>
+				</h3><p class="u-fw3 u-ff-sans u-mb0 track-slide-2">Like you, we are developers. Our purpose in life is to make developers superheroes by enabling you to deliver more than expected, faster than expected. For nearly two decades, we have been partnering with our community of over <span class="u-fw5">four million</span> developers to help cut down on development time, increase productivity, and make it easy to embrace the latest technologies and user experience trends.</p></div>
+				<div class="StoryTabs-item StoryTabs-item--3 u-l-mb4">
+				<img aria-label="Deliver More Than Expected" src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/homepage/deliver.png?sfvrsn=cfc94f36_5" loading="lazy" title="Deliver More Than Expected" alt="Deliver More Than Expected" class="u-dn u-l-db u-mb2">
+				<h3 class="story-modest-mb3-h3 ">
+				<button class="u-tint-white-story">Deliver More Than Expected
+				</button><div class="StoryTabs-progress StoryTabs-progress--half u-l-dn"></div></h3><p class="stage-1 u-fw3 u-ff-sans u-mb0 track-slide-3">By using the modern, feature-rich and professionally designed UI components from Telerik and Kendo UI, you will be armed with everything you need to deliver outstanding web, mobile and desktop experiences in less time.<br>With the backing of
+				our legendary technical support, provided directly by the developers who build the products, you can be confident that you have the best partner to rely on in your journey.</p></div></div>
+
+			
+			 
+			 <div class="row-Story-cta" data-sf-element="Row">
+			  <div id="" class="row-Story-cta-div u-mb6" data-sf-element="Column 1" data-placeholder-label="Column 1">
+
+			<a href="/all-products" class="row-Story-cta-a Btn Btn--prim-my" data-sf-ec-immutable="" data-track-instance="2">Explore our Portfolio</a></div>
+			  <div id="" class="row-Story-cta-div" data-sf-element="Column 2" data-placeholder-label="Column 2">
+
+			<a href="/purchase.aspx" class="row-Story-cta-a Btn Btn--ghost-my" data-sf-ec-immutable="" data-track-instance="2">See pricing</a></div>
+			</div>
+			</div>
+		</section>
+		<section class="Section--recognition" >
+		
+			<div class="Section-decor--awards-recognition" data-animation-length="3" data-animation-top-offset="0" ></div>
+			<div class="u-h-w u-pos-rel">
+				<h2>Awards</h2>
+				<p class="u-fs-t">Greatness—it’s one thing to say you have it, but it means more when others recognize it. Progress Telerik is proud to hold the following industry awards.</p>
+			</div>
+		
+		</section>
+		 
+		 
+		 <div class="Section Section--patch" data-sf-element="Section" data-placeholder-label="Section">
+		  <div id="" class="Section--patch-n" data-sf-element="Section Content" data-placeholder-label="Section Content">
+
+			<div class="Section--patch-n-u">
+			 <div class="col-4 Section--patch-n-col">
+			 <div class="Section--patch-n-col-left">275K+ <span class="Section--patch-n-col-right">customers</span>
+			 </div>
+			 </div>
+			 <div class="col-4 Section--patch-n-col">
+			 <div class="Section--patch-n-col-left">4.6M+ <span class="Section--patch-n-col-right">developers</span>
+			 </div>
+			 </div>
+			 <div class="col-4 Section--patch-n-col">
+			 <div class="Section--patch-n-col-left">400+ <span class="Section--patch-n-col-right">awards</span>
+			 </div>
+			 </div>
+			</div>
+
+		  </div>
+		</div>
+		 
+		 
+		 <section class="Section Section-Testimonials" data-sf-element="Section" data-placeholder-label="Section">
+		  <div id="" class="Section-Testimonials-content u-h-w" data-sf-element="Section Content" data-placeholder-label="Section Content">
+
+			<h2 class="u-mb4">What Developers Say</h2>
+
+ 
+			<div class="Testimonials-container">
+				<div class="Testimonials-block" style="">
+
+
+					<blockquote class="Testimonials-blockquote is-active" aria-label="selected">
+						<p class="Testimonials-blockquote-p">"Using Telerik UI, we were able to boost our speed to production by over 50%. The ability to create rich, interactive UI's without the hassle of rolling our own controls has been incredibly valuable. It should also be noted that Telerik's online documentation is rich with examples, tutorials, and real-working demos. When using competing products, I found their example's to be demo-ware, and not as easily converted to actual production-ready solutions."</p>
+						<figure>
+
+							<figcaption>
+								<cite>Jerry Sevier</cite>
+								<span>Enterprise Architect, Chaparral Energy</span>
+							</figcaption>
+						</figure>
+					</blockquote>
+					<blockquote class="Testimonials-blockquote">
+						<p class="Testimonials-blockquote-p">Telerik has rich collection of components that enables developers to build fully functional and great looking web applications in a matter of days, which used to be weeks and months without Telerik.    On top of that, an aggressive release cycle and very responsive support makes it one of the best investments we've made.</p>
+						<figure>
+
+							<figcaption>
+								<cite>Nishant Agarwal</cite>
+								<span>Lead Developer, American Express</span>
+							</figcaption>
+						</figure>
+					</blockquote>
+					<blockquote class="Testimonials-blockquote">
+							<p class="Testimonials-blockquote-p">With new controls being released every quarter, the value we get from our DevCraft Complete subscription is great. Telerik support is unsurpassed, with support forums for instant answers and an excellent ticketing system for the odd occasion when we need a little more hand-holding.</p>
+							<figure>
+
+								<figcaption>
+									<cite>Tony Hogben</cite>
+									<span>Owner, mtstudios.net</span>
+								</figcaption>
+							</figure>
+						</blockquote>
+
+					<div class="Testimonials-prev js-testimonials-prev"></div>
+					<div class="Testimonials-next js-testimonials-next"></div>
+				</div>
+				<div class="Testimonials-tlrk-Tabs" data-tlrk-plugin="tlrkTabs" data-tlrktabs-wrapper-selector=".Testimonials" data-tlrktabs-automated="false" data-tlrktabs-set-anchors="false" data-tlrktabs-scroll-to-tabs="false" data-tlrktabs-animate-height="true" data-tlrktabs-prev-btn=".js-testimonials-prev" data-tlrktabs-next-btn=".js-testimonials-next">
+					<a href="javascript:void(0)" class="is-active" aria-label="selected" data-track-instance="1"></a>
+					<a href="javascript:void(0)" data-track-instance="2"></a>
+					<a href="javascript:void(0)" data-track-instance="3"></a>
+				</div>
+			</div>
+
+		  </div>
+		</section>
+		 
+		 
+		 
+		 
+		 
+		 </div>
+        
+    </body>
+</html>
